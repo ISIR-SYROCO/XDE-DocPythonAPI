@@ -6,6 +6,7 @@ SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
 PAPER         =
 BUILDDIR      = build
+GH_PAGES_SOURCES = source Makefile
 
 # Internal variables.
 PAPEROPT_a4     = -D latex_paper_size=a4
@@ -128,3 +129,18 @@ doctest:
 	$(SPHINXBUILD) -b doctest $(ALLSPHINXOPTS) $(BUILDDIR)/doctest
 	@echo "Testing of doctests in the sources finished, look at the " \
 	      "results in $(BUILDDIR)/doctest/output.txt."
+
+gh-pages:
+	git checkout gh-pages
+	rm -rf build
+	git checkout master $(GH_PAGES_SOURCES)
+	git reset HEAD
+	make html
+	mv -fv build/html/* ./
+	rm -rf $(GH_PAGES_SOURCES) build
+	git add -A
+	git commit -m -e "Generated gh-pages for `git log master -1 --pretty=short --abbrev-commit`"
+	@echo "Changes commited, you can now do "
+	@echo
+	@echo "git push origin gh-pages"
+	@echo "git checkout master"
