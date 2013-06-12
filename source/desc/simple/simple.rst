@@ -5,3 +5,4 @@ desc.simple
 
     collision
     graphic
+    merge
