@@ -4,3 +4,4 @@ desc
     :glob:
 
     ascii3dxml
+    collision
