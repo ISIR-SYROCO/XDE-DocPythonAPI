@@ -25,6 +25,7 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="top" title="XDE_DocPythonAPI 1.0.0 documentation" href="../index.html" />
     <link rel="up" title="desc" href="desc.html" />
+    <link rel="next" title="desc.physic" href="physic.html" />
     <link rel="prev" title="desc.material" href="material.html" /> 
   </head>
   <body>
@@ -37,6 +38,9 @@
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
+        <li class="right" >
+          <a href="physic.html" title="desc.physic"
+             accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="material.html" title="desc.material"
              accesskey="P">previous</a> |</li>
@@ -257,8 +261,144 @@ name, using a dictionary.</p>
     "yoyo": (RENAME_SOURCE,"yeye") # the source element named "yoyo" will be added to the target collection. Its copy in the target collection will be renamed "yeye".
 }</pre>
 </div>
+<dl class="data">
+<dt id="desc.merge.desc.merge.MergeCollectionsProcess.__dict__">
+<tt class="descname">__dict__</tt><a class="headerlink" href="#desc.merge.desc.merge.MergeCollectionsProcess.__dict__" title="Permalink to this definition">¶</a></dt>
+<dd><p>dictionary for instance variables (if defined</p>
 </dd></dl>
 
+<dl class="data">
+<dt id="desc.merge.desc.merge.MergeCollectionsProcess.__weakref__">
+<tt class="descname">__weakref__</tt><a class="headerlink" href="#desc.merge.desc.merge.MergeCollectionsProcess.__weakref__" title="Permalink to this definition">¶</a></dt>
+<dd><p>list of weak references to the object (if defined)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt>
+<tt class="descname">KEEP_DEST = 1</tt></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<tt class="descname">KEEP_SOURCE = 0</tt></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<tt class="descname">RENAME_SOURCE = 2</tt></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="desc.merge.desc.merge.NameConflictError">
+<em class="property">class </em><tt class="descclassname">desc.merge.</tt><tt class="descname">NameConflictError</tt><big>(</big><em>exceptions.Exception</em><big>)</big><a class="headerlink" href="#desc.merge.desc.merge.NameConflictError" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="desc.merge.desc.merge.NameConflictError.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>self</em>, <em>message</em>, <em>conflicts</em><big>)</big><a class="headerlink" href="#desc.merge.desc.merge.NameConflictError.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="desc.merge.desc.merge.NameConflictError.__str__">
+<tt class="descname">__str__</tt><big>(</big><em>self</em><big>)</big><a class="headerlink" href="#desc.merge.desc.merge.NameConflictError.__str__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="desc.merge.desc.merge.NameConflictError.__weakref__">
+<tt class="descname">__weakref__</tt><a class="headerlink" href="#desc.merge.desc.merge.NameConflictError.__weakref__" title="Permalink to this definition">¶</a></dt>
+<dd><p>list of weak references to the object (if defined)</p>
+</dd></dl>
+
+<dl class="data">
+<dt>
+<tt class="descname">__new__ = &lt;built-in method __new__ of type object&gt;</tt></dt>
+<dd><p>T.__new__(S, ...) -&gt; a new object with type S, a subtype of T</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="desc.merge.desc.merge.NameConflictError.__delattr__">
+<tt class="descname">__delattr__</tt><big>(</big><em>...</em><big>)</big><a class="headerlink" href="#desc.merge.desc.merge.NameConflictError.__delattr__" title="Permalink to this definition">¶</a></dt>
+<dd><p>x.__delattr__(&#8216;name&#8217;) &lt;==&gt; del x.name</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="desc.merge.desc.merge.NameConflictError.__getattribute__">
+<tt class="descname">__getattribute__</tt><big>(</big><em>...</em><big>)</big><a class="headerlink" href="#desc.merge.desc.merge.NameConflictError.__getattribute__" title="Permalink to this definition">¶</a></dt>
+<dd><p>x.__getattribute__(&#8216;name&#8217;) &lt;==&gt; x.name</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="desc.merge.desc.merge.NameConflictError.__getitem__">
+<tt class="descname">__getitem__</tt><big>(</big><em>...</em><big>)</big><a class="headerlink" href="#desc.merge.desc.merge.NameConflictError.__getitem__" title="Permalink to this definition">¶</a></dt>
+<dd><p>x.__getitem__(y) &lt;==&gt; x[y]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="desc.merge.desc.merge.NameConflictError.__getslice__">
+<tt class="descname">__getslice__</tt><big>(</big><em>...</em><big>)</big><a class="headerlink" href="#desc.merge.desc.merge.NameConflictError.__getslice__" title="Permalink to this definition">¶</a></dt>
+<dd><p>x.__getslice__(i, j) &lt;==&gt; x[i:j]</p>
+<p>Use of negative indices is not supported.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="desc.merge.desc.merge.NameConflictError.__setattr__">
+<tt class="descname">__setattr__</tt><big>(</big><em>...</em><big>)</big><a class="headerlink" href="#desc.merge.desc.merge.NameConflictError.__setattr__" title="Permalink to this definition">¶</a></dt>
+<dt>
+<tt class="descname">x.__setattr__('name', value) &lt;==&gt; x.name = value</tt></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="desc.merge.desc.merge.NameConflictError.__setstate__">
+<tt class="descname">__setstate__</tt><big>(</big><em>...</em><big>)</big><a class="headerlink" href="#desc.merge.desc.merge.NameConflictError.__setstate__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="desc.merge.desc.merge.NameConflictError.__unicode__">
+<tt class="descname">__unicode__</tt><big>(</big><em>...</em><big>)</big><a class="headerlink" href="#desc.merge.desc.merge.NameConflictError.__unicode__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="desc.merge.desc.merge.NameConflictError.__dict__">
+<tt class="descname">__dict__</tt><a class="headerlink" href="#desc.merge.desc.merge.NameConflictError.__dict__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="desc.merge.desc.merge.NameConflictError.args">
+<tt class="descname">args</tt><a class="headerlink" href="#desc.merge.desc.merge.NameConflictError.args" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="desc.merge.desc.merge.NameConflictError.message">
+<tt class="descname">message</tt><a class="headerlink" href="#desc.merge.desc.merge.NameConflictError.message" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="desc.merge.desc.merge.checkNameConflicts">
+<tt class="descclassname">desc.merge.</tt><tt class="descname">checkNameConflicts</tt><big>(</big><em>dest</em>, <em>source</em><big>)</big><a class="headerlink" href="#desc.merge.desc.merge.checkNameConflicts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list of pairs of entities whose names clash from two list of named entities. This can be applied to conflict serach in the materials or geometries of a scene_pb2.Library.</p>
+<ul class="simple">
+<li>param: <strong>dest</strong> is either a list of elements that have a field &#8220;name&#8221; or a dictionary name-&gt;named_element where named_element has a field &#8220;name&#8221;.</li>
+<li>param: <strong>source</strong> is another list of elements that have a field &#8220;name&#8221;</li>
+<li>return: the list of non conflicting source elements and a list of pairs (d,s) where d and s are an element of dest and an element of source, respectively, such that d.name==s.name</li>
+</ul>
+</dd></dl>
+
+<dl class="function">
+<dt id="desc.merge.desc.merge.getGraphicalSceneConflicts">
+<tt class="descclassname">desc.merge.</tt><tt class="descname">getGraphicalSceneConflicts</tt><big>(</big><em>dest_world</em>, <em>src_world</em>, <em>src_node</em><big>)</big><a class="headerlink" href="#desc.merge.desc.merge.getGraphicalSceneConflicts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the list of conflicting graphical elements as a list of pairs of strings (name,type).
+For instance [(&#8216;node-toto&#8217;, &#8216;Mesh&#8217;), (&#8216;ishape0&#8217;, &#8216;GraphicalMesh&#8217;)].</p>
+<p>The types are:</p>
+<ul class="simple">
+<li>Mesh</li>
+<li>GraphicalMesh</li>
+<li>GraphicalNode</li>
+<li>Material</li>
+</ul>
 </dd></dl>
 
 </div>
@@ -272,6 +412,9 @@ name, using a dictionary.</p>
   <h4>Previous topic</h4>
   <p class="topless"><a href="material.html"
                         title="previous chapter">desc.material</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="physic.html"
+                        title="next chapter">desc.physic</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="../_sources/desc/merge.txt"
@@ -303,6 +446,9 @@ name, using a dictionary.</p>
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
+        <li class="right" >
+          <a href="physic.html" title="desc.physic"
+             >next</a> |</li>
         <li class="right" >
           <a href="material.html" title="desc.material"
              >previous</a> |</li>

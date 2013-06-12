@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>desc.simple.physic &mdash; XDE_DocPythonAPI 1.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="XDE_DocPythonAPI 1.0.0 documentation" href="../../index.html" />
+    <link rel="up" title="desc.simple" href="simple.html" />
+    <link rel="next" title="desc.simple.scene" href="scene.html" />
+    <link rel="prev" title="desc.simple.merge" href="merge.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="scene.html" title="desc.simple.scene"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="merge.html" title="desc.simple.merge"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">XDE_DocPythonAPI 1.0.0 documentation</a> &raquo;</li>
+          <li><a href="../desc.html" >desc</a> &raquo;</li>
+          <li><a href="simple.html" accesskey="U">desc.simple</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="desc-simple-physic">
+<h1>desc.simple.physic<a class="headerlink" href="#desc-simple-physic" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
+</div>
+<span class="target" id="module-desc.simple.physic"></span><dl class="function">
+<dt id="desc.simple.physic.addBallJoint">
+<tt class="descclassname">desc.simple.physic.</tt><tt class="descname">addBallJoint</tt><big>(</big><em>dest_world</em>, <em>name</em>, <em>child_name</em>, <em>H_child_parent</em>, <em>center_in_parent</em>, <em>damping</em><big>)</big><a class="headerlink" href="#desc.simple.physic.addBallJoint" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="desc.simple.physic.addFixedJoint">
+<tt class="descclassname">desc.simple.physic.</tt><tt class="descname">addFixedJoint</tt><big>(</big><em>dest_world</em>, <em>name</em>, <em>child_name</em>, <em>H_child_parent</em><big>)</big><a class="headerlink" href="#desc.simple.physic.addFixedJoint" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="desc.simple.physic.addFreeJoint">
+<tt class="descclassname">desc.simple.physic.</tt><tt class="descname">addFreeJoint</tt><big>(</big><em>dest_world</em>, <em>name</em>, <em>child_name</em>, <em>H_child_parent</em>, <em>trs_damping=0</em>, <em>rot_damping=0</em><big>)</big><a class="headerlink" href="#desc.simple.physic.addFreeJoint" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="desc.simple.physic.addHingeJoint">
+<tt class="descclassname">desc.simple.physic.</tt><tt class="descname">addHingeJoint</tt><big>(</big><em>dest_world</em>, <em>name</em>, <em>child_name</em>, <em>H_child_parent</em>, <em>center_in_parent</em>, <em>axis_in_parent</em>, <em>damping</em>, <em>qmin</em>, <em>qmax</em>, <em>ref_pos</em><big>)</big><a class="headerlink" href="#desc.simple.physic.addHingeJoint" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="desc.simple.physic.addPrismaticJoint">
+<tt class="descclassname">desc.simple.physic.</tt><tt class="descname">addPrismaticJoint</tt><big>(</big><em>dest_world</em>, <em>name</em>, <em>child_name</em>, <em>H_child_parent</em>, <em>center_in_parent</em>, <em>axis_in_parent</em>, <em>damping</em>, <em>qmin</em>, <em>qmax</em>, <em>ref_pos</em><big>)</big><a class="headerlink" href="#desc.simple.physic.addPrismaticJoint" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="desc.simple.physic.addRigidBody">
+<tt class="descclassname">desc.simple.physic.</tt><tt class="descname">addRigidBody</tt><big>(</big><em>dest_world</em>, <em>rigid_body_name</em>, <em>parent_name=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#desc.simple.physic.addRigidBody" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="desc.simple.physic.addSerialHingeJoint">
+<tt class="descclassname">desc.simple.physic.</tt><tt class="descname">addSerialHingeJoint</tt><big>(</big><em>dest_world</em>, <em>name</em>, <em>child_name</em>, <em>H_child_parent</em>, <em>center_in_parent</em>, <em>axis_in_parent</em>, <em>damping</em>, <em>qmin</em>, <em>qmax</em>, <em>ref_pos</em><big>)</big><a class="headerlink" href="#desc.simple.physic.addSerialHingeJoint" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="merge.html"
+                        title="previous chapter">desc.simple.merge</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="scene.html"
+                        title="next chapter">desc.simple.scene</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/desc/simple/physic.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="scene.html" title="desc.simple.scene"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="merge.html" title="desc.simple.merge"
+             >previous</a> |</li>
+        <li><a href="../../index.html">XDE_DocPythonAPI 1.0.0 documentation</a> &raquo;</li>
+          <li><a href="../desc.html" >desc</a> &raquo;</li>
+          <li><a href="simple.html" >desc.simple</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, XDE-ISIR.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b1.
+    </div>
+  </body>
+</html>

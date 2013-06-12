@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>agents.graphic.proto &mdash; XDE_DocPythonAPI 1.0.0 documentation</title>
+    <title>desc.simple.merge &mdash; XDE_DocPythonAPI 1.0.0 documentation</title>
     
     <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -24,9 +24,9 @@
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="top" title="XDE_DocPythonAPI 1.0.0 documentation" href="../../index.html" />
-    <link rel="up" title="agents.graphic" href="graphic.html" />
-    <link rel="next" title="agents.graphic.simple" href="simple.html" />
-    <link rel="prev" title="agents.graphic.core" href="core.html" /> 
+    <link rel="up" title="desc.simple" href="simple.html" />
+    <link rel="next" title="desc.simple.physic" href="physic.html" />
+    <link rel="prev" title="desc.simple.graphic" href="graphic.html" /> 
   </head>
   <body>
     <div class="related">
@@ -39,14 +39,14 @@
           <a href="../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="right" >
-          <a href="simple.html" title="agents.graphic.simple"
+          <a href="physic.html" title="desc.simple.physic"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="core.html" title="agents.graphic.core"
+          <a href="graphic.html" title="desc.simple.graphic"
              accesskey="P">previous</a> |</li>
         <li><a href="../../index.html">XDE_DocPythonAPI 1.0.0 documentation</a> &raquo;</li>
-          <li><a href="../agents.html" >agents</a> &raquo;</li>
-          <li><a href="graphic.html" accesskey="U">agents.graphic</a> &raquo;</li> 
+          <li><a href="../desc.html" >desc</a> &raquo;</li>
+          <li><a href="simple.html" accesskey="U">desc.simple</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -55,23 +55,31 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="agents-graphic-proto">
-<h1>agents.graphic.proto<a class="headerlink" href="#agents-graphic-proto" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="desc-simple-merge">
+<h1>desc.simple.merge<a class="headerlink" href="#desc-simple-merge" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 <ul class="simple">
 </ul>
 </div>
-<span class="target" id="module-agents.graphic.proto"></span><dl class="function">
-<dt id="agents.graphic.proto.configureBasicCamera">
-<tt class="descclassname">agents.graphic.proto.</tt><tt class="descname">configureBasicCamera</tt><big>(</big><em>graph_scn</em><big>)</big><a class="headerlink" href="#agents.graphic.proto.configureBasicCamera" title="Permalink to this definition">¶</a></dt>
-<dd><p>Sets default values for the clipping planes.</p>
-</dd></dl>
+<span class="target" id="module-desc.simple.merge"></span><dl class="function">
+<dt id="desc.simple.merge.appendLibraryElementsFromGraphicalTree">
+<tt class="descclassname">desc.simple.merge.</tt><tt class="descname">appendLibraryElementsFromGraphicalTree</tt><big>(</big><em>library</em>, <em>src_library</em>, <em>src_node</em><big>)</big><a class="headerlink" href="#desc.simple.merge.appendLibraryElementsFromGraphicalTree" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 
 <dl class="function">
-<dt id="agents.graphic.proto.configureBasicLights">
-<tt class="descclassname">agents.graphic.proto.</tt><tt class="descname">configureBasicLights</tt><big>(</big><em>graph_scn</em>, <em>bg_color=&lt;color_pb2.Color object at 0x2505a28&gt;</em><big>)</big><a class="headerlink" href="#agents.graphic.proto.configureBasicLights" title="Permalink to this definition">¶</a></dt>
-<dd><p>Set a gray background and attaches a light to the camera.</p>
-</dd></dl>
+<dt id="desc.simple.merge.appendLibraryMeshesFromCompositeTree">
+<tt class="descclassname">desc.simple.merge.</tt><tt class="descname">appendLibraryMeshesFromCompositeTree</tt><big>(</big><em>library</em>, <em>src_library</em>, <em>src_node</em><big>)</big><a class="headerlink" href="#desc.simple.merge.appendLibraryMeshesFromCompositeTree" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="desc.simple.merge.mergeLibraryElementsFromGraphicalTree">
+<tt class="descclassname">desc.simple.merge.</tt><tt class="descname">mergeLibraryElementsFromGraphicalTree</tt><big>(</big><em>library</em>, <em>src_library</em>, <em>src_node</em><big>)</big><a class="headerlink" href="#desc.simple.merge.mergeLibraryElementsFromGraphicalTree" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="desc.simple.merge.mergeLibraryMeshesFromCompositeTree">
+<tt class="descclassname">desc.simple.merge.</tt><tt class="descname">mergeLibraryMeshesFromCompositeTree</tt><big>(</big><em>library</em>, <em>src_library</em>, <em>src_node</em><big>)</big><a class="headerlink" href="#desc.simple.merge.mergeLibraryMeshesFromCompositeTree" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 
 </div>
 
@@ -82,14 +90,14 @@
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <h4>Previous topic</h4>
-  <p class="topless"><a href="core.html"
-                        title="previous chapter">agents.graphic.core</a></p>
+  <p class="topless"><a href="graphic.html"
+                        title="previous chapter">desc.simple.graphic</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="simple.html"
-                        title="next chapter">agents.graphic.simple</a></p>
+  <p class="topless"><a href="physic.html"
+                        title="next chapter">desc.simple.physic</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
-    <li><a href="../../_sources/agents/graphic/proto.txt"
+    <li><a href="../../_sources/desc/simple/merge.txt"
            rel="nofollow">Show Source</a></li>
   </ul>
 <div id="searchbox" style="display: none">
@@ -119,14 +127,14 @@
           <a href="../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="right" >
-          <a href="simple.html" title="agents.graphic.simple"
+          <a href="physic.html" title="desc.simple.physic"
              >next</a> |</li>
         <li class="right" >
-          <a href="core.html" title="agents.graphic.core"
+          <a href="graphic.html" title="desc.simple.graphic"
              >previous</a> |</li>
         <li><a href="../../index.html">XDE_DocPythonAPI 1.0.0 documentation</a> &raquo;</li>
-          <li><a href="../agents.html" >agents</a> &raquo;</li>
-          <li><a href="graphic.html" >agents.graphic</a> &raquo;</li> 
+          <li><a href="../desc.html" >desc</a> &raquo;</li>
+          <li><a href="simple.html" >desc.simple</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">

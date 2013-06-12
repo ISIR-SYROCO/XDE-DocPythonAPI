@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>desc.simple.scene &mdash; XDE_DocPythonAPI 1.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="XDE_DocPythonAPI 1.0.0 documentation" href="../../index.html" />
+    <link rel="up" title="desc.simple" href="simple.html" />
+    <link rel="next" title="lgsm" href="../../math/lgsm.html" />
+    <link rel="prev" title="desc.simple.physic" href="physic.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../../math/lgsm.html" title="lgsm"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="physic.html" title="desc.simple.physic"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">XDE_DocPythonAPI 1.0.0 documentation</a> &raquo;</li>
+          <li><a href="../desc.html" >desc</a> &raquo;</li>
+          <li><a href="simple.html" accesskey="U">desc.simple</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="desc-simple-scene">
+<h1>desc.simple.scene<a class="headerlink" href="#desc-simple-scene" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
+</div>
+<span class="target" id="module-desc.simple.scene"></span><dl class="function">
+<dt id="desc.simple.scene.desc.simple.scene.addBinding">
+<tt class="descclassname">desc.simple.scene.</tt><tt class="descname">addBinding</tt><big>(</big><em>world</em>, <em>phy</em>, <em>graph</em>, <em>graph_ref</em>, <em>coll</em><big>)</big><a class="headerlink" href="#desc.simple.scene.desc.simple.scene.addBinding" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds an association between a physical element, a graphical element, a collision element.
+Specify empty string to ignore one element (only associate a physical and a collision element, or only
+physics and graphics, and so on).
+A physical element can be associated to two graphical elements: the graphical node of the scene tree
+that represents the body itself, and the graphical node that represents the parent of the rigid body
+in the physical scene. Since both scene trees do not have the same topology, the parent of a graphical
+node is not necessarily associated to the parent of its rigid body in the physical tree.
+This asoociation between one physical node and two graphical nodes allows the mapping between a physical tree
+and a a graphical tree with finer grain.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="desc.simple.scene.desc.simple.scene.createWorld">
+<tt class="descclassname">desc.simple.scene.</tt><tt class="descname">createWorld</tt><big>(</big><em>name='root', H=&lt;Displacement x,y,z,qw,qx,qy,qz = (0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0)&gt;, scale=matrix([[ 1.], [ 1.], [ 1.]])</em><big>)</big><a class="headerlink" href="#desc.simple.scene.desc.simple.scene.createWorld" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates an empty world with graphical root initialized with given name, scale and displacement.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>name</strong> &#8211; [default: &#8220;root&#8221;] is the name of the graphical root.</li>
+<li><strong>H</strong> &#8211; [default: lgsm.Displacement()] is the root displacement.</li>
+<li><strong>scale</strong> &#8211; [default: lgsm.vector(1,1,1)] is the scale of the root node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">an empty, new world message whose graphical scene has been correctly initialized.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="desc.simple.scene.desc.simple.scene.parseColladaFile">
+<tt class="descclassname">desc.simple.scene.</tt><tt class="descname">parseColladaFile</tt><big>(</big><em>file_name</em>, <em>root_node_name='root'</em>, <em>append_label_library=''</em>, <em>append_label_nodes=''</em>, <em>append_label_graph_meshes=''</em>, <em>float_values=False</em><big>)</big><a class="headerlink" href="#desc.simple.scene.desc.simple.scene.parseColladaFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parses a dae file to produce a scene_pb2.World instance. By default, the protobuf messages will be filled with double-precision real values (C++&#8217;s double).
+Single-precision values can be obtained via the optional argument &#8216;float_values&#8217;.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>file_name</strong> &#8211; is the name of the file to parse.</li>
+<li><strong>root_node_name</strong> &#8211; [default: &#8220;root&#8221;] is the name of the root node.</li>
+<li><strong>append_label_library</strong> &#8211; [default: &#8220;&#8221;] specifies whether to append a string label to the name of all loaded library entities (in which case any reference to them is updated).</li>
+<li><strong>append_label_nodes</strong> &#8211; [default: &#8220;&#8221;] specifies whether to append a string label to the name of all loaded nodes.</li>
+<li><strong>append_label_graph_meshes</strong> &#8211; [default: &#8220;&#8221;] specifies whether to append a string label to the name of all loaded graphical meshes.</li>
+<li><strong>float_values</strong> &#8211; [default: False] can be specified to fill the protobuf messages with single-precision real values (C++&#8217;s float).</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">a protobuf message scene_pb2.World containing an initialized graphical scene matching the content of the given dae file.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="physic.html"
+                        title="previous chapter">desc.simple.physic</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../../math/lgsm.html"
+                        title="next chapter">lgsm</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/desc/simple/scene.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../../math/lgsm.html" title="lgsm"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="physic.html" title="desc.simple.physic"
+             >previous</a> |</li>
+        <li><a href="../../index.html">XDE_DocPythonAPI 1.0.0 documentation</a> &raquo;</li>
+          <li><a href="../desc.html" >desc</a> &raquo;</li>
+          <li><a href="simple.html" >desc.simple</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, XDE-ISIR.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b1.
+    </div>
+  </body>
+</html>

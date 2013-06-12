@@ -128,4 +128,80 @@ desc.merge
                 "yoyo": (RENAME_SOURCE,"yeye") # the source element named "yoyo" will be added to the target collection. Its copy in the target collection will be renamed "yeye".
             }
 
+        .. py:data:: __dict__
 
+            dictionary for instance variables (if defined
+
+        .. py:data:: __weakref__
+
+            list of weak references to the object (if defined)
+
+        .. py:attribute:: KEEP_DEST = 1
+        .. py:attribute:: KEEP_SOURCE = 0
+        .. py:attribute:: RENAME_SOURCE = 2
+
+.. py:class:: desc.merge.NameConflictError(exceptions.Exception)
+
+    .. py:method:: __init__(self, message, conflicts)
+    .. py:method:: __str__(self)
+    .. py:data:: __weakref__
+
+        list of weak references to the object (if defined)
+
+    .. py:data:: __new__ = <built-in method __new__ of type object>
+
+        T.__new__(S, ...) -> a new object with type S, a subtype of T
+
+    .. py:method:: __delattr__(...)
+
+        x.__delattr__('name') <==> del x.name
+
+    .. py:method:: __getattribute__(...)
+
+        x.__getattribute__('name') <==> x.name
+
+    .. py:method:: __getitem__(...)
+
+        x.__getitem__(y) <==> x[y]
+
+    .. py:method:: __getslice__(...)
+
+        x.__getslice__(i, j) <==> x[i:j]
+
+        Use of negative indices is not supported.
+
+    .. py:method __reduce__(...)
+    .. py:method __repr__(...)
+
+        x.__repr__() <==> repr(x)
+
+    .. py:method:: __setattr__(...)
+        x.__setattr__('name', value) <==> x.name = value
+
+    .. py:method:: __setstate__(...)
+
+    .. py:method:: __unicode__(...)
+
+    .. py:data:: __dict__
+    .. py:data:: args
+    .. py:data:: message
+
+.. py:function:: desc.merge.checkNameConflicts(dest, source)
+
+    Returns a list of pairs of entities whose names clash from two list of named entities. This can be applied to conflict serach in the materials or geometries of a scene_pb2.Library.
+
+    + param: **dest** is either a list of elements that have a field "name" or a dictionary name->named_element where named_element has a field "name".
+    + param: **source** is another list of elements that have a field "name"
+    + return: the list of non conflicting source elements and a list of pairs (d,s) where d and s are an element of dest and an element of source, respectively, such that d.name==s.name
+
+.. py:function:: desc.merge.getGraphicalSceneConflicts(dest_world, src_world, src_node)
+
+    Returns the list of conflicting graphical elements as a list of pairs of strings (name,type).
+    For instance [('node-toto', 'Mesh'), ('ishape0', 'GraphicalMesh')].
+
+    The types are:
+
+    * Mesh
+    * GraphicalMesh
+    * GraphicalNode
+    * Material

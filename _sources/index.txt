@@ -14,6 +14,28 @@ Contents:
 
    agents/agents
    desc/desc
+   math/lgsm
+   protobuf/base_pb2
+   protobuf/collision_pb2
+   protobuf/color_pb2
+   protobuf/contactPoint_pb2
+   protobuf/control_pb2
+   protobuf/datadesc
+   protobuf/geometry_pb2
+   protobuf/glyph_pb2
+   protobuf/graphic_pb2
+   protobuf/human_pb2
+   protobuf/image_pb2
+   protobuf/material_pb2
+   protobuf/mocap_pb2
+   protobuf/mouse_pb2
+   protobuf/oniSkeleton_pb2
+   protobuf/physic_pb2
+   protobuf/record_pb2
+   protobuf/scene_pb2
+   protobuf/selection_pb2
+   protobuf/tag_pb2
+   protobuf/xdeworks_pb2
 
 Indices and tables
 ==================

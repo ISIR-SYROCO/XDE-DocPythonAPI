@@ -11,3 +11,7 @@ desc
     knobycreator
     material
     merge
+    physic
+    robot
+    scene
+    simple/simple
