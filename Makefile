@@ -132,6 +132,7 @@ doctest:
 
 gh-pages:
 	git checkout gh-pages
+	rm -Rf *
 	git checkout master $(GH_PAGES_SOURCES)
 	git reset HEAD
 	make html
