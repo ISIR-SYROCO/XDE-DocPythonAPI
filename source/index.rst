@@ -32,6 +32,7 @@ Contents:
    protobuf/oniSkeleton_pb2
    protobuf/physic_pb2
    protobuf/record_pb2
+   protobuf/scene_pb2
 
 Indices and tables
 ==================
