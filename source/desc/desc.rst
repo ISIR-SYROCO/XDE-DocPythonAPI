@@ -9,3 +9,4 @@ desc
     geometry
     graphic
     knobycreator
+    material
