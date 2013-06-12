@@ -5,3 +5,4 @@ desc
 
     ascii3dxml
     collision
+    core
