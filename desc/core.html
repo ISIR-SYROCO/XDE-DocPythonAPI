@@ -1,0 +1,393 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>desc.core &mdash; XDE_DocPythonAPI 1.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="XDE_DocPythonAPI 1.0.0 documentation" href="../index.html" />
+    <link rel="up" title="desc" href="desc.html" />
+    <link rel="next" title="desc.geometry" href="geometry.html" />
+    <link rel="prev" title="desc.collision" href="collision.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="geometry.html" title="desc.geometry"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="collision.html" title="desc.collision"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">XDE_DocPythonAPI 1.0.0 documentation</a> &raquo;</li>
+          <li><a href="desc.html" accesskey="U">desc</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="desc-core">
+<h1>desc.core<a class="headerlink" href="#desc-core" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
+</div>
+<dl class="function">
+<dt id="desc.core.absolutePositions">
+<tt class="descclassname">desc.core.</tt><tt class="descname">absolutePositions</tt><big>(</big><em>root, H=&lt;Displacement x,y,z,qw,qx,qy,qz = (0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0)&gt;, scale=[1, 1, 1], get_node_name=&lt;function &lt;lambda&gt;&gt;, get_node_pos=&lt;function &lt;lambda&gt;&gt;, get_node_scale=&lt;function &lt;lambda&gt;&gt;</em><big>)</big><a class="headerlink" href="#desc.core.absolutePositions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a dictionary of nodes&#8217; absolute positions.
+The keys of the dictionary are the node names, and the values are the absolute positions (lgsm.Displacements).
+A node is any structure with a member &#8216;name&#8217; and an iterable member &#8216;children&#8217; whose elements are nodes.
+The member &#8216;name&#8217; must be equality-comparable with the argument &#8216;name&#8217;
+(e.g. collision_pb2.CompositeNode or graphic_pb2.GraphNode).
+For this function, nodes must have an iterable field &#8216;position&#8217;,
+whose elements represent a Displacement x,y,z,qw,qx,qy,qz in that order.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>root</strong> &#8211; is the root node of the tree.</li>
+<li><strong>H</strong> &#8211; [default: lgsm.Displacement()] is an additional offset that will be applied on the left of all results.</li>
+<li><strong>scale</strong> &#8211; [default: [1,1,1]] is a scale to apply to the root node.</li>
+<li><strong>get_node_name</strong> &#8211; is a lambda function that extracts the name of a node. By default, it looks for a field &#8220;name&#8221;  in the node members.</li>
+<li><strong>get_node_pos</strong> &#8211; is a lambda function that extracts the position of a node. By default, it looks for a field &#8220;position&#8221; in the node members.</li>
+<li><strong>get_node_scale</strong> &#8211; is a lambda function that extracts the scale of a node. By default, it looks for a field &#8220;scale&#8221; in the node members.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">the dictionary of absolute displacements.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="desc.core.absoluteScales">
+<tt class="descclassname">desc.core.</tt><tt class="descname">absoluteScales</tt><big>(</big><em>root, scale=[1, 1, 1], get_node_name=&lt;function &lt;lambda&gt;&gt;, get_node_scale=&lt;function &lt;lambda&gt;&gt;</em><big>)</big><a class="headerlink" href="#desc.core.absoluteScales" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a dictionary of nodes&#8217; absolute scales. The keys of the dictionary are
+the node names, and the values are the absolute scales (3-sized lgsm.vectors).
+A node is any structure with a member &#8216;name&#8217; and an iterable member &#8216;children&#8217;
+whose elements are nodes.  The member &#8216;name&#8217; must be equality-comparable with
+the argument &#8216;name&#8217;. For this function, nodes must have an iterable field
+&#8216;scale&#8217;, with 3 elements representing the x-scale, y-scale and z-scale.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>root</strong> &#8211; is the root node of the tree.
+:param scale: [default: [1,1,1]] is an additional scale that will be applied to all results.
+:param get_node_name: is a lambda function that extracts the name of a node. By default, it looks for a field &#8220;name&#8221; in the node members.
+:param get_node_scale: is a lambda function that extracts the scale of a node. By default, it looks for a field &#8220;scale&#8221; in the node members.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the dictionary of absolute displacements.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="desc.core.appendLabelToCollection">
+<tt class="descclassname">desc.core.</tt><tt class="descname">appendLabelToCollection</tt><big>(</big><em>elements</em>, <em>append_label</em><big>)</big><a class="headerlink" href="#desc.core.appendLabelToCollection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Appends a string label to the names of the elements of a collection. Works for
+the meshes and materials of a scene_pb2.Lib rary.  The references to these
+elements in any graphical or collision tree <em>are not changed</em>! Remember to call
+appendLabelToLibraryReferences if needed.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>elements</strong> &#8211; is a collection of meshes or materials. Works for any iterable of elements with a field &#8220;name&#8221;.</li>
+<li><strong>append_label</strong> &#8211; is a string.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="desc.core.appendLabelToNodes">
+<tt class="descclassname">desc.core.</tt><tt class="descname">appendLabelToNodes</tt><big>(</big><em>node</em>, <em>append_label</em>, <em>set_node_name=&lt;function &lt;lambda&gt;&gt;</em>, <em>appender=&lt;function &lt;lambda&gt;&gt;</em><big>)</big><a class="headerlink" href="#desc.core.appendLabelToNodes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Appends a string label to all nodes name of a tree.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>node</strong> &#8211; is the root of the subtree.</li>
+<li><strong>append_label</strong> &#8211; is a string.</li>
+<li><strong>set_node_name</strong> &#8211; is a lambda function that sets the name of a node (by default it assigns a string to the field &#8220;name&#8221; of a node.</li>
+<li><strong>appender</strong> &#8211; is a lambda function that returns a new node name given a node and a suffix (by default, it appends the suffix to the value of the field &#8220;name&#8221; of the node).</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="desc.core.copyTree">
+<tt class="descclassname">desc.core.</tt><tt class="descname">copyTree</tt><big>(</big><em>dest_parent_node</em>, <em>source_node</em>, <em>trim_nodes=</em><span class="optional">[</span><span class="optional">]</span><big>)</big><a class="headerlink" href="#desc.core.copyTree" title="Permalink to this definition">¶</a></dt>
+<dd><p>Appends a copy of a tree to a node. This performs a deep copy of the subtree
+(only the nodes themselves, not the referenced items such as meshes or materials).
+A tree node has a field &#8220;name&#8221; (string) and a field &#8220;children&#8221; (list of nodes).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>dest_parent_node</strong> &#8211; is the parent node in the destination tree.
+:param source_node: is the root of the subtree to append.
+:param trim_nodes: [default: []] is a list of nodes to remove from the copied tree (the source tree is untouched).</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the node of the attached subtree.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="desc.core.displacementToRepeatedField">
+<tt class="descclassname">desc.core.</tt><tt class="descname">displacementToRepeatedField</tt><big>(</big><em>H</em><big>)</big><a class="headerlink" href="#desc.core.displacementToRepeatedField" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="desc.core.findInList">
+<tt class="descclassname">desc.core.</tt><tt class="descname">findInList</tt><big>(</big><em>seq</em>, <em>to_find</em><big>)</big><a class="headerlink" href="#desc.core.findInList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Searches elements with given names in a sequence.
+The elements must have a member &#8216;name&#8217; equality-comparable to the one specified in arguments.
+This function will work e.g. to search meshes in a scene_pb2.Library instance, ...</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>seq</strong> &#8211; is the sequence in which the element is searched for.
+:param to_find: a list or a set of names of elements to find.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the list of found elements. If to_find is a string (only one element is sought), returns the element if found, None otherwise.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="desc.core.findInTree">
+<tt class="descclassname">desc.core.</tt><tt class="descname">findInTree</tt><big>(</big><em>node</em>, <em>to_find</em>, <em>get_node_name=&lt;function &lt;lambda&gt;&gt;</em><big>)</big><a class="headerlink" href="#desc.core.findInTree" title="Permalink to this definition">¶</a></dt>
+<dd><p>Searches nodes with given names in a tree.
+A node is any structure with a member &#8216;name&#8217; and an iterable member &#8216;children&#8217;
+whose elements are nodes. The member &#8216;name&#8217; must be equality-comparable with the argument &#8216;name&#8217;.
+This function will work e.g. with graphic_pb2.GraphNode, collision_pb2.CompositeNode...</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>node</strong> &#8211; is the root of the (sub)tree.
+:param to_find: a list or a set of names of elements to find.
+:param get_node_name: is a lambda function that extracts the name of a node. By default, it looks for a field &#8220;name&#8221; in the node members.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the list of found elements. If to_find is a string (only one element is sought), returns the first element if found, None otherwise.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="desc.core.getNodesFromTree">
+<tt class="descclassname">desc.core.</tt><tt class="descname">getNodesFromTree</tt><big>(</big><em>node</em><big>)</big><a class="headerlink" href="#desc.core.getNodesFromTree" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns all the nodes af a subtree as a list.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="desc.core.printTree">
+<tt class="descclassname">desc.core.</tt><tt class="descname">printTree</tt><big>(</big><em>root</em>, <em>get_node_name=&lt;function &lt;lambda&gt;&gt;</em><big>)</big><a class="headerlink" href="#desc.core.printTree" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prints a tree starting from a given node. A node must have an iterable member &#8216;children&#8217; whose elements are nodes.
+This works e.g. with graphic_pb2.GraphNode and collision_pb2.CompositeNode instances.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>root</strong> &#8211; is the root of the tree to display.
+:param get_node_name: is a lambda function that extracts the name of a node. By default, it looks for a field &#8220;name&#8221; in the node members.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="desc.core.setNodePosition">
+<tt class="descclassname">desc.core.</tt><tt class="descname">setNodePosition</tt><big>(</big><em>node</em>, <em>H</em><big>)</big><a class="headerlink" href="#desc.core.setNodePosition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the position field of a node.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>node</strong> &#8211; is a collision or graph node.</li>
+<li><strong>H</strong> &#8211; is an lgsm displacement.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="desc.core.setNodeScale">
+<tt class="descclassname">desc.core.</tt><tt class="descname">setNodeScale</tt><big>(</big><em>node</em>, <em>scale</em><big>)</big><a class="headerlink" href="#desc.core.setNodeScale" title="Permalink to this definition">¶</a></dt>
+<dd><p>Changes the scale of a node. An isometric scale can be specified, or a list of three scales.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>scale</strong> &#8211; is either a float, int or long, or a list of three ints, floats or longs.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="desc.core.trimNodes">
+<tt class="descclassname">desc.core.</tt><tt class="descname">trimNodes</tt><big>(</big><em>root</em>, <em>trim_nodes</em>, <em>get_node_name=&lt;function &lt;lambda&gt;&gt;</em><big>)</big><a class="headerlink" href="#desc.core.trimNodes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removes nodes from a tree. A node is any structure with an iterable member &#8216;children&#8217; whose elements are nodes.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>root</strong> &#8211; is the root of the tree to trim.</li>
+<li><strong>trim_nodes</strong> &#8211; is a list of names of nodes to trim or a lambda function that returns True for all nodes to trim.</li>
+<li><strong>get_node_name</strong> &#8211; is a lambda function that extracts the name of a node. By default, it looks for a field &#8220;name&#8221; in the node members.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="desc.core.visitBreadthFirst">
+<tt class="descclassname">desc.core.</tt><tt class="descname">visitBreadthFirst</tt><big>(</big><em>fn</em>, <em>node</em><big>)</big><a class="headerlink" href="#desc.core.visitBreadthFirst" title="Permalink to this definition">¶</a></dt>
+<dd><p>Applies fn to the nodes of a tree or subtree by visiting the tree in breadth-first order.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>fn</strong> &#8211; is a function to apply to each node.</li>
+<li><strong>node</strong> &#8211; is the root of the (sub)tree.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="desc.core.visitDepthFirst">
+<tt class="descclassname">desc.core.</tt><tt class="descname">visitDepthFirst</tt><big>(</big><em>fn</em>, <em>node</em><big>)</big><a class="headerlink" href="#desc.core.visitDepthFirst" title="Permalink to this definition">¶</a></dt>
+<dd><p>Applies fn to the nodes of a tree or subtree by visiting the tree in depth-first order.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>fn</strong> &#8211; is a function to apply to each node.</li>
+<li><strong>node</strong> &#8211; is the root of the (sub)tree.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="collision.html"
+                        title="previous chapter">desc.collision</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="geometry.html"
+                        title="next chapter">desc.geometry</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/desc/core.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="geometry.html" title="desc.geometry"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="collision.html" title="desc.collision"
+             >previous</a> |</li>
+        <li><a href="../index.html">XDE_DocPythonAPI 1.0.0 documentation</a> &raquo;</li>
+          <li><a href="desc.html" >desc</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, XDE-ISIR.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b1.
+    </div>
+  </body>
+</html>

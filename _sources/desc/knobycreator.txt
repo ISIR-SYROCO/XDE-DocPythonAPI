@@ -1,8 +1,8 @@
-agents.graphic.core
-===================
+desc.knobycreator
+=================
 .. toctree::
     :glob:
-.. automodule:: agents.graphic.core
+.. automodule:: desc.knobycreator
     :members:
     :undoc-members:
     :inherited-members:

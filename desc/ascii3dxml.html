@@ -1,15 +1,16 @@
-
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>desc.ascii3dxml &mdash; XDE_DocPythonAPI v1.0.0 documentation</title>
+    <title>desc.ascii3dxml &mdash; XDE_DocPythonAPI 1.0.0 documentation</title>
+    
     <link rel="stylesheet" href="../_static/default.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
@@ -22,8 +23,9 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="top" title="XDE_DocPythonAPI v1.0.0 documentation" href="../index.html" />
+    <link rel="top" title="XDE_DocPythonAPI 1.0.0 documentation" href="../index.html" />
     <link rel="up" title="desc" href="desc.html" />
+    <link rel="next" title="desc.collision" href="collision.html" />
     <link rel="prev" title="desc" href="desc.html" /> 
   </head>
   <body>
@@ -37,9 +39,12 @@
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="right" >
+          <a href="collision.html" title="desc.collision"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
           <a href="desc.html" title="desc"
              accesskey="P">previous</a> |</li>
-        <li><a href="../index.html">XDE_DocPythonAPI v1.0.0 documentation</a> &raquo;</li>
+        <li><a href="../index.html">XDE_DocPythonAPI 1.0.0 documentation</a> &raquo;</li>
           <li><a href="desc.html" accesskey="U">desc</a> &raquo;</li> 
       </ul>
     </div>  
@@ -62,6 +67,229 @@
 <dd><p>Bases: <tt class="xref py py-class docutils literal"><span class="pre">object</span></tt></p>
 <p>To parse 3d XML files... One instance can be used for several files.</p>
 <dl class="method">
+<dt id="desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__clear">
+<tt class="descname">_Ascii3dxmlParser__clear</tt><big>(</big><big>)</big><a class="headerlink" href="#desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__clear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__element_xmlns_tag">
+<tt class="descname">_Ascii3dxmlParser__element_xmlns_tag</tt><big>(</big><em>element</em><big>)</big><a class="headerlink" href="#desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__element_xmlns_tag" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__find_in_list">
+<tt class="descname">_Ascii3dxmlParser__find_in_list</tt><big>(</big><em>seq</em>, <em>name</em>, <em>index=False</em><big>)</big><a class="headerlink" href="#desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__find_in_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Searches a element with given name in a sequence.
+This function will work e.g. to search meshes in a scene_pb2.Library instance, a graphical mesh in a scene_pb2.GraphicalScene instance...
++ param: <strong>seq</strong> is the sequence in which the element is searched for.
++ param: <strong>name</strong> is the name of the element to locate.
++ param: <strong>index</strong> indicates whether to return the index of the element in the list.
++ return: the element if it was found, None otherwise.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__load_default_view_property">
+<tt class="descname">_Ascii3dxmlParser__load_default_view_property</tt><big>(</big><em>element</em><big>)</big><a class="headerlink" href="#desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__load_default_view_property" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__load_faces">
+<tt class="descname">_Ascii3dxmlParser__load_faces</tt><big>(</big><em>element</em>, <em>faces</em><big>)</big><a class="headerlink" href="#desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__load_faces" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__load_instance_3d">
+<tt class="descname">_Ascii3dxmlParser__load_instance_3d</tt><big>(</big><em>element</em><big>)</big><a class="headerlink" href="#desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__load_instance_3d" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__load_instance_rep">
+<tt class="descname">_Ascii3dxmlParser__load_instance_rep</tt><big>(</big><em>element</em><big>)</big><a class="headerlink" href="#desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__load_instance_rep" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__load_mesh_file">
+<tt class="descname">_Ascii3dxmlParser__load_mesh_file</tt><big>(</big><em>mesh_name</em>, <em>filename</em><big>)</big><a class="headerlink" href="#desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__load_mesh_file" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__load_polygonal_lod">
+<tt class="descname">_Ascii3dxmlParser__load_polygonal_lod</tt><big>(</big><em>element</em>, <em>lods</em><big>)</big><a class="headerlink" href="#desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__load_polygonal_lod" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__load_polygonal_rep">
+<tt class="descname">_Ascii3dxmlParser__load_polygonal_rep</tt><big>(</big><em>element</em>, <em>vertex</em>, <em>normals</em>, <em>faces</em>, <em>polylines</em>, <em>lods</em><big>)</big><a class="headerlink" href="#desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__load_polygonal_rep" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__load_polylines">
+<tt class="descname">_Ascii3dxmlParser__load_polylines</tt><big>(</big><em>element</em>, <em>polylines</em><big>)</big><a class="headerlink" href="#desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__load_polylines" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__load_reference_3d">
+<tt class="descname">_Ascii3dxmlParser__load_reference_3d</tt><big>(</big><em>element</em><big>)</big><a class="headerlink" href="#desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__load_reference_3d" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__load_reference_rep">
+<tt class="descname">_Ascii3dxmlParser__load_reference_rep</tt><big>(</big><em>element</em><big>)</big><a class="headerlink" href="#desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__load_reference_rep" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__load_vertexBuffer">
+<tt class="descname">_Ascii3dxmlParser__load_vertexBuffer</tt><big>(</big><em>element</em>, <em>vertex</em>, <em>normals</em><big>)</big><a class="headerlink" href="#desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__load_vertexBuffer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__merge_default_view">
+<tt class="descname">_Ascii3dxmlParser__merge_default_view</tt><big>(</big><big>)</big><a class="headerlink" href="#desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__merge_default_view" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__merge_graph">
+<tt class="descname">_Ascii3dxmlParser__merge_graph</tt><big>(</big><big>)</big><a class="headerlink" href="#desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__merge_graph" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__push_lods_mesh_reference_to_library">
+<tt class="descname">_Ascii3dxmlParser__push_lods_mesh_reference_to_library</tt><big>(</big><em>mesh_name</em>, <em>geom_name</em>, <em>vertex</em>, <em>normals</em>, <em>lods</em><big>)</big><a class="headerlink" href="#desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__push_lods_mesh_reference_to_library" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__push_lods_mesh_reference_to_library_optim">
+<tt class="descname">_Ascii3dxmlParser__push_lods_mesh_reference_to_library_optim</tt><big>(</big><em>mesh_name</em>, <em>geom_name</em>, <em>vertex</em>, <em>normals</em>, <em>lods</em><big>)</big><a class="headerlink" href="#desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__push_lods_mesh_reference_to_library_optim" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__push_mesh_reference_to_library">
+<tt class="descname">_Ascii3dxmlParser__push_mesh_reference_to_library</tt><big>(</big><em>mesh_name</em>, <em>geom_name</em>, <em>vertex</em>, <em>normals</em>, <em>faces</em><big>)</big><a class="headerlink" href="#desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__push_mesh_reference_to_library" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__push_polyline_reference_to_library">
+<tt class="descname">_Ascii3dxmlParser__push_polyline_reference_to_library</tt><big>(</big><em>mesh_name</em>, <em>line_name</em>, <em>polylines</em><big>)</big><a class="headerlink" href="#desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__push_polyline_reference_to_library" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__unflatten_fans">
+<tt class="descname">_Ascii3dxmlParser__unflatten_fans</tt><big>(</big><em>fans</em><big>)</big><a class="headerlink" href="#desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__unflatten_fans" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__unflatten_strips">
+<tt class="descname">_Ascii3dxmlParser__unflatten_strips</tt><big>(</big><em>strips</em><big>)</big><a class="headerlink" href="#desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__unflatten_strips" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__unflatten_triangles">
+<tt class="descname">_Ascii3dxmlParser__unflatten_triangles</tt><big>(</big><em>triangles</em><big>)</big><a class="headerlink" href="#desc.ascii3dxml.Ascii3dxmlParser._Ascii3dxmlParser__unflatten_triangles" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="desc.ascii3dxml.Ascii3dxmlParser.__class__">
+<tt class="descname">__class__</tt><a class="headerlink" href="#desc.ascii3dxml.Ascii3dxmlParser.__class__" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <tt class="xref py py-class docutils literal"><span class="pre">type</span></tt></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="desc.ascii3dxml.Ascii3dxmlParser.__delattr__">
+<tt class="descname">__delattr__</tt><a class="headerlink" href="#desc.ascii3dxml.Ascii3dxmlParser.__delattr__" title="Permalink to this definition">¶</a></dt>
+<dd><p>x.__delattr__(&#8216;name&#8217;) &lt;==&gt; del x.name</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="desc.ascii3dxml.Ascii3dxmlParser.__dict__">
+<tt class="descname">__dict__</tt><em class="property"> = dict_proxy({'_Ascii3dxmlParser__unflatten_fans': &lt;function __unflatten_fans at 0x3c7b758&gt;, '__module__': 'desc.ascii3dxml', '_Ascii3dxmlParser__load_mesh_file': &lt;function __load_mesh_file at 0x3c7b578&gt;, '_Ascii3dxmlParser__find_in_list': &lt;function __find_in_list at 0x3c7bb90&gt;, '_Ascii3dxmlParser__merge_graph': &lt;function __merge_graph at 0x3c7b500&gt;, '_Ascii3dxmlParser__load_polylines': &lt;function __load_polylines at 0x3c7b938&gt;, '_Ascii3dxmlParser__load_instance_rep': &lt;function __load_instance_rep at 0x3c7b398&gt;, '_Ascii3dxmlParser__load_reference_3d': &lt;function __load_reference_3d at 0x3c7b230&gt;, '__dict__': &lt;attribute '__dict__' of 'Ascii3dxmlParser' objects&gt;, '_Ascii3dxmlParser__unflatten_strips': &lt;function __unflatten_strips at 0x3c7b7d0&gt;, '_Ascii3dxmlParser__clear': &lt;function __clear at 0x3c7b1b8&gt;, '_Ascii3dxmlParser__load_instance_3d': &lt;function __load_instance_3d at 0x3c7b2a8&gt;, '_Ascii3dxmlParser__load_reference_rep': &lt;function __load_reference_rep at 0x3c7b320&gt;, '_Ascii3dxmlParser__push_polyline_reference_to_library': &lt;function __push_polyline_reference_to_library at 0x3c7bb18&gt;, '_Ascii3dxmlParser__push_lods_mesh_reference_to_library_optim': &lt;function __push_lods_mesh_reference_to_library_optim at 0x3c7baa0&gt;, '__init__': &lt;function __init__ at 0x3c7b0c8&gt;, '_Ascii3dxmlParser__load_polygonal_lod': &lt;function __load_polygonal_lod at 0x3c7b668&gt;, '_Ascii3dxmlParser__load_vertexBuffer': &lt;function __load_vertexBuffer at 0x3c7b8c0&gt;, 'load_file': &lt;function load_file at 0x3c7b140&gt;, '_Ascii3dxmlParser__merge_default_view': &lt;function __merge_default_view at 0x3c7b488&gt;, '_Ascii3dxmlParser__push_lods_mesh_reference_to_library': &lt;function __push_lods_mesh_reference_to_library at 0x3c7ba28&gt;, '_Ascii3dxmlParser__load_polygonal_rep': &lt;function __load_polygonal_rep at 0x3c7b5f0&gt;, '_Ascii3dxmlParser__element_xmlns_tag': &lt;function __element_xmlns_tag at 0x3c7bc08&gt;, '_Ascii3dxmlParser__unflatten_triangles': &lt;function __unflatten_triangles at 0x3c7b848&gt;, '__weakref__': &lt;attribute '__weakref__' of 'Ascii3dxmlParser' objects&gt;, '_Ascii3dxmlParser__push_mesh_reference_to_library': &lt;function __push_mesh_reference_to_library at 0x3c7b9b0&gt;, '_Ascii3dxmlParser__load_faces': &lt;function __load_faces at 0x3c7b6e0&gt;, '_Ascii3dxmlParser__load_default_view_property': &lt;function __load_default_view_property at 0x3c7b410&gt;, '__doc__': '\n  To parse 3d XML files... One instance can be used for several files.\n  '})</em><a class="headerlink" href="#desc.ascii3dxml.Ascii3dxmlParser.__dict__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="desc.ascii3dxml.Ascii3dxmlParser.__format__">
+<tt class="descname">__format__</tt><big>(</big><big>)</big><a class="headerlink" href="#desc.ascii3dxml.Ascii3dxmlParser.__format__" title="Permalink to this definition">¶</a></dt>
+<dd><p>default object formatter</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="desc.ascii3dxml.Ascii3dxmlParser.__getattribute__">
+<tt class="descname">__getattribute__</tt><a class="headerlink" href="#desc.ascii3dxml.Ascii3dxmlParser.__getattribute__" title="Permalink to this definition">¶</a></dt>
+<dd><p>x.__getattribute__(&#8216;name&#8217;) &lt;==&gt; x.name</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="desc.ascii3dxml.Ascii3dxmlParser.__hash__">
+<tt class="descname">__hash__</tt><a class="headerlink" href="#desc.ascii3dxml.Ascii3dxmlParser.__hash__" title="Permalink to this definition">¶</a></dt>
+<dd><p>x.__hash__() &lt;==&gt; hash(x)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="desc.ascii3dxml.Ascii3dxmlParser.__init__">
+<tt class="descname">__init__</tt><big>(</big><big>)</big><a class="headerlink" href="#desc.ascii3dxml.Ascii3dxmlParser.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="desc.ascii3dxml.Ascii3dxmlParser.__module__">
+<tt class="descname">__module__</tt><em class="property"> = 'desc.ascii3dxml'</em><a class="headerlink" href="#desc.ascii3dxml.Ascii3dxmlParser.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="staticmethod">
+<dt id="desc.ascii3dxml.Ascii3dxmlParser.__new__">
+<em class="property">static </em><tt class="descname">__new__</tt><big>(</big><em>S</em>, <em>...</em><big>)</big> &rarr; a new object with type S, a subtype of T<a class="headerlink" href="#desc.ascii3dxml.Ascii3dxmlParser.__new__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="desc.ascii3dxml.Ascii3dxmlParser.__reduce__">
+<tt class="descname">__reduce__</tt><big>(</big><big>)</big><a class="headerlink" href="#desc.ascii3dxml.Ascii3dxmlParser.__reduce__" title="Permalink to this definition">¶</a></dt>
+<dd><p>helper for pickle</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="desc.ascii3dxml.Ascii3dxmlParser.__reduce_ex__">
+<tt class="descname">__reduce_ex__</tt><big>(</big><big>)</big><a class="headerlink" href="#desc.ascii3dxml.Ascii3dxmlParser.__reduce_ex__" title="Permalink to this definition">¶</a></dt>
+<dd><p>helper for pickle</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="desc.ascii3dxml.Ascii3dxmlParser.__repr__">
+<tt class="descname">__repr__</tt><a class="headerlink" href="#desc.ascii3dxml.Ascii3dxmlParser.__repr__" title="Permalink to this definition">¶</a></dt>
+<dd><p>x.__repr__() &lt;==&gt; repr(x)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="desc.ascii3dxml.Ascii3dxmlParser.__setattr__">
+<tt class="descname">__setattr__</tt><a class="headerlink" href="#desc.ascii3dxml.Ascii3dxmlParser.__setattr__" title="Permalink to this definition">¶</a></dt>
+<dd><p>x.__setattr__(&#8216;name&#8217;, value) &lt;==&gt; x.name = value</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="desc.ascii3dxml.Ascii3dxmlParser.__sizeof__">
+<tt class="descname">__sizeof__</tt><big>(</big><big>)</big> &rarr; int<a class="headerlink" href="#desc.ascii3dxml.Ascii3dxmlParser.__sizeof__" title="Permalink to this definition">¶</a></dt>
+<dd><p>size of object in memory, in bytes</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="desc.ascii3dxml.Ascii3dxmlParser.__str__">
+<tt class="descname">__str__</tt><a class="headerlink" href="#desc.ascii3dxml.Ascii3dxmlParser.__str__" title="Permalink to this definition">¶</a></dt>
+<dd><p>x.__str__() &lt;==&gt; str(x)</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="desc.ascii3dxml.Ascii3dxmlParser.__subclasshook__">
+<em class="property">static </em><tt class="descname">__subclasshook__</tt><big>(</big><big>)</big><a class="headerlink" href="#desc.ascii3dxml.Ascii3dxmlParser.__subclasshook__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Abstract classes can override this to customize issubclass().</p>
+<p>This is invoked early on by abc.ABCMeta.__subclasscheck__().
+It should return True, False or NotImplemented.  If it returns
+NotImplemented, the normal algorithm is used.  Otherwise, it
+overrides the normal algorithm (and the outcome is cached).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="desc.ascii3dxml.Ascii3dxmlParser.__weakref__">
+<tt class="descname">__weakref__</tt><a class="headerlink" href="#desc.ascii3dxml.Ascii3dxmlParser.__weakref__" title="Permalink to this definition">¶</a></dt>
+<dd><p>list of weak references to the object (if defined)</p>
+</dd></dl>
+
+<dl class="method">
 <dt id="desc.ascii3dxml.Ascii3dxmlParser.load_file">
 <tt class="descname">load_file</tt><big>(</big><em>filename</em>, <em>lod=True</em>, <em>print_header=True</em><big>)</big><a class="headerlink" href="#desc.ascii3dxml.Ascii3dxmlParser.load_file" title="Permalink to this definition">¶</a></dt>
 <dd><p>Start parsing a compressed 3d xml zip file. Returns a scene_pb2.World with an initialized graphical scene.</p>
@@ -80,6 +308,9 @@
   <h4>Previous topic</h4>
   <p class="topless"><a href="desc.html"
                         title="previous chapter">desc</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="collision.html"
+                        title="next chapter">desc.collision</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="../_sources/desc/ascii3dxml.txt"
@@ -88,7 +319,7 @@
 <div id="searchbox" style="display: none">
   <h3>Quick search</h3>
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" size="18" />
+      <input type="text" name="q" />
       <input type="submit" value="Go" />
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
@@ -112,15 +343,18 @@
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="right" >
+          <a href="collision.html" title="desc.collision"
+             >next</a> |</li>
+        <li class="right" >
           <a href="desc.html" title="desc"
              >previous</a> |</li>
-        <li><a href="../index.html">XDE_DocPythonAPI v1.0.0 documentation</a> &raquo;</li>
+        <li><a href="../index.html">XDE_DocPythonAPI 1.0.0 documentation</a> &raquo;</li>
           <li><a href="desc.html" >desc</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">
-        &copy; Copyright 2013, Sovannara HAK.
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+        &copy; Copyright 2013, XDE-ISIR.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b1.
     </div>
   </body>
 </html>

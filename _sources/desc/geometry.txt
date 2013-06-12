@@ -1,8 +1,8 @@
-agents.graphic.core
-===================
+desc.geometry
+===============
 .. toctree::
     :glob:
-.. automodule:: agents.graphic.core
+.. automodule:: desc.geometry
     :members:
     :undoc-members:
     :inherited-members:
