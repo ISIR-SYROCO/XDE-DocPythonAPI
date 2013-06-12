@@ -132,14 +132,14 @@ doctest:
 
 gh-pages:
 	git checkout gh-pages
-	rm -rf build
+	rm -rf *
 	git checkout master $(GH_PAGES_SOURCES)
 	git reset HEAD
 	make html
 	mv -fv build/html/* ./
 	rm -rf $(GH_PAGES_SOURCES) build
 	git add -A
-	git commit -m -e "Generated gh-pages for `git log master -1 --pretty=short --abbrev-commit`"
+	git commit -m -e "Generated gh-pages for `git log master -1 --pretty=format:'%h%n%n%s'`"
 	@echo "Changes commited, you can now do "
 	@echo
 	@echo "git push origin gh-pages"
