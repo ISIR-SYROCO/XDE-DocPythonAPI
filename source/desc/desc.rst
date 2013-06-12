@@ -8,3 +8,4 @@ desc
     core
     geometry
     graphic
+    knobycreator
