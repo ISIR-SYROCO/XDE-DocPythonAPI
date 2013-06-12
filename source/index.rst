@@ -30,6 +30,7 @@ Contents:
    protobuf/mocap_pb2
    protobuf/mouse_pb2
    protobuf/oniSkeleton_pb2
+   protobuf/physic_pb2
 
 Indices and tables
 ==================
