@@ -12,3 +12,4 @@ desc
     material
     merge
     physic
+    robot
