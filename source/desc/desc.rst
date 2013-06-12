@@ -7,3 +7,4 @@ desc
     collision
     core
     geometry
+    graphic
