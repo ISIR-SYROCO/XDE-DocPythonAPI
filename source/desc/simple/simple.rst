@@ -4,3 +4,4 @@ desc.simple
     :glob:
 
     collision
+    graphic
