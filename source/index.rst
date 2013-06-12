@@ -24,6 +24,7 @@ Contents:
    protobuf/geometry_pb2
    protobuf/glyph_pb2
    protobuf/graphic_pb2
+   protobuf/human_pb2
 
 Indices and tables
 ==================
