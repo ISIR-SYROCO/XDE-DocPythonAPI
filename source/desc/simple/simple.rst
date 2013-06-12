@@ -7,3 +7,4 @@ desc.simple
     graphic
     merge
     physic
+    scene
