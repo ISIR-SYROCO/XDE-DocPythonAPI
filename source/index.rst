@@ -29,6 +29,7 @@ Contents:
    protobuf/material_pb2
    protobuf/mocap_pb2
    protobuf/mouse_pb2
+   protobuf/oniSkeleton_pb2
 
 Indices and tables
 ==================
