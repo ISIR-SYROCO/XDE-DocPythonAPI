@@ -13,6 +13,7 @@ Contents:
    :glob:
 
    agents/agents
+   desc/desc
 
 Indices and tables
 ==================
