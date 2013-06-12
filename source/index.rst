@@ -35,6 +35,7 @@ Contents:
    protobuf/scene_pb2
    protobuf/selection_pb2
    protobuf/tag_pb2
+   protobuf/xdeworks_pb2
 
 Indices and tables
 ==================
