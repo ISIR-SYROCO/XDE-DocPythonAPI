@@ -47,7 +47,7 @@ desc.merge
         Note that elements that have been flagged as "to ignore" with the KEEP_DEST flag will be considered as merged,
         and their status cannot be changed during the process!
 
-    .. py:method:: desc.merge.MergeCollectionsProcess.__init__(self, dest, source)
+    .. py:method:: __init__(self, dest, source)
 
        Starts a dry run of a merge process. After construction, you will be able to access the
        elements that will be added to the target collection by calling the newElements method,
@@ -56,4 +56,76 @@ desc.merge
 
        :param dest: is a target collection where to add elements.
        :param source: is a source collection to merge into the destination collection.
+
+    .. py:method:: conflicts(self)
+
+        Returns the name of conflicting elements.
+
+        :return: a list of conflicting names (strings).
+
+    .. py:method:: conflictsResoved(self)
+
+        Returns True if all conflicts have been resolved (by one or several calls to the resolveConflicts method).
+
+        :return: True if the conflicts method returns an empty list, False otherwise.
+
+    .. py:method:: elementsToIgnore(self)
+
+        Returns the names of the conflicting elements that the user chose to ignore (they won't be added
+        to the target collection) using the resolveConflict method with the KEEP_DEST flag.
+
+        :return: a list of strings.
+
+    .. py:method:: elementsToOverwrite(self)
+
+        Returns the names of the conflicting elements that the user chose to overwrite with the source
+        collection's elements using the resolveConflict method with the KEEP_SOURCE flag.
+
+        :return: a list of strings.
+
+    .. py:method:: elementsToRename(self)
+
+        Returns the names of cnflicting elements that will be inserted into the target collection
+        with a new name.
+
+        :return: a list of pairs of strings.
+
+    .. py:method:: newElements(self)
+
+        Returns the names of elements that will be added to the target collection (those who did
+        not conflict).
+
+        :return: a list of strings.
+
+    .. py:method:: progression(self)
+
+        The merge process is completed once all elements from the source have been treated by the
+        apply method. This method returns the percentage of treated elements.
+
+        :return: a float between 0. and 100.
+
+    .. py:method:: resetDryRun(self)
+
+        Brings back the merge process to the state it was after last call to the apply method.
+        Changes that have been applied cannot be undone. If apply was never called, brings back the merge process
+        to the state it was after construction.
+
+    .. py:method:: resolveConflicts(self, strategy_dict)
+
+        This method allows the user to specify how to handle conflicts, by specifying a strategy for each conflicting
+        name, using a dictionary.
+
+        :param strategy_dict: is a dictionary string->int or (int,string). The keys of the dict are conflicting names, and the values are either an integer (KEEP_SOURCE or KEEP_DEST) or a pair integer/string (RENAME_SOURCE,new_name), where new_name is the name to use for the source element once it is inserted into the destination collection.
+        :exception NameError:  if the merge will add an element e1 with name "toto", and the user specifies to solve a conflict involving an element e2 with name "foo" by renaming e2 "toto", the function will fail without modifying the current merge state (no conflict will be processed, the user has to specify another strategy dictionary).
+        :exception RuntimeError: if the specified strategy is incorrect (unknown resolution flag or format).
+
+        ::
+
+            Example strategy dict:
+            {
+                "toto": KEEP_SOURCE, # we overwrite the element with name "toto" in the target collection with the one in the source collection
+                "tata": KEEP_DEST,   # we ignore the element with name "tata" from the source collection and keep the one in the target collection untouched.
+                "yoyo": (RENAME_SOURCE,"yeye") # the source element named "yoyo" will be added to the target collection. Its copy in the target collection will be renamed "yeye".
+            }
+
 
