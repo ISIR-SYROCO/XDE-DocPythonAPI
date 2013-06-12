@@ -15,6 +15,7 @@ Contents:
    agents/agents
    desc/desc
    math/lgsm
+   protobuf/base_pb2
 
 Indices and tables
 ==================
