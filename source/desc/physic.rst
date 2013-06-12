@@ -44,25 +44,25 @@ desc.physic
 
     Instantiation and creation of the protobuf description of a cable.
 
-    :param [required] number_of_nodes: is the number of nodes of the cable
-    :param [required] linear_mass: is the linear mass of the cable
-    :param [required] damping: is the internal damping of the cable
-    :param [optional] ambient_rotation_damping: is the ambient rotation damping of the cable
-    :param [optional] ambient_translation_damping: is the ambient translation damping of the cable
-    :param [required] materials: is a list of all the materials of the cable. 1 material minimum is required.
+    :param number_of_nodes: [required] is the number of nodes of the cable
+    :param linear_mass: [required] is the linear mass of the cable
+    :param damping: [required] is the internal damping of the cable
+    :param ambient_rotation_damping: [optional] is the ambient rotation damping of the cable
+    :param ambient_translation_damping: [optional] is the ambient translation damping of the cable
+    :param materials: [required] is a list of all the materials of the cable. 1 material minimum is required.
 
       A material is a dictionary with the following parameters:
-        :param [required] young_modulus: young modulus of the material
-        :param [required] shear_modulus: shear modulus of the material
-        :param [required] section_radius: radius of the material inside the cable
-    :param [required] reference_configuration: is a dictionary describing the cable reference configuration:
-        :param [required] type: is the reference configuration type
-        :param [required] pos: is the configuration positions:
+        :param young_modulus: [required] young modulus of the material
+        :param shear_modulus: [required] shear modulus of the material
+        :param section_radius: [required] radius of the material inside the cable
+    :param reference_configuration: [required] is a dictionary describing the cable reference configuration:
+        :param type: [required] is the reference configuration type
+        :param pos: is the configuration positions: [required]
 
             * if type == 0 then you only have to specify the initial and final translations (straight cable)
             * if type == 1 then you have to specify all the nodes translations (the rotations will be automatically computed)
             * if type == 2 then you have to specify all the nodes translations and rotations
-    :param [optional] connectors: is a list of rigid body to connect to certain cable node. For instance, if one needs to connect the first cable node to an existing "ground" rigid body and the final node to an existing "ball" rigid body then : connectors = [(0,"ground"), (number_of_nodes-1,"ball")]
+    :param connectors: [optional] is a list of rigid body to connect to certain cable node. For instance, if one needs to connect the first cable node to an existing "ground" rigid body and the final node to an existing "ball" rigid body then : connectors = [(0,"ground"), (number_of_nodes-1,"ball")]
     :return: the created description
 
 .. py:function:: desc.physic.fillFixedJoint(joint, name, H_child_parent)
