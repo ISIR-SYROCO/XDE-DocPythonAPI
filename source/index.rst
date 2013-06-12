@@ -16,6 +16,7 @@ Contents:
    desc/desc
    math/lgsm
    protobuf/base_pb2
+   protobuf/collision_pb2
 
 Indices and tables
 ==================
