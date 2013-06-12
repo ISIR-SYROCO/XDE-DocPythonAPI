@@ -216,3 +216,5 @@ man_pages = [
     ('index', 'xde_docpythonapi', u'XDE_DocPythonAPI Documentation',
      [u'Sovannara HAK'], 1)
 ]
+autoclass_content = "both"
+needs_sphinx = "1.2"
