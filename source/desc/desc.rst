@@ -6,3 +6,4 @@ desc
     ascii3dxml
     collision
     core
+    geometry
