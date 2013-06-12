@@ -10,3 +10,4 @@ desc
     graphic
     knobycreator
     material
+    merge
