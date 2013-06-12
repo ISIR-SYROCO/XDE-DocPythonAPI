@@ -19,6 +19,7 @@ Contents:
    protobuf/collision_pb2
    protobuf/color_pb2
    protobuf/contactPoint_pb2
+   protobuf/control_pb2
 
 Indices and tables
 ==================
