@@ -14,6 +14,7 @@ Contents:
 
    agents/agents
    desc/desc
+   math/lgsm
 
 Indices and tables
 ==================
