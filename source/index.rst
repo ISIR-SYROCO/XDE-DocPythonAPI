@@ -41,6 +41,7 @@ Contents:
    protobuf/xdeworks_pb2
 
    colladaparser/colladaparser
+   xdehuman/xdehuman
 
 Indices and tables
 ==================
