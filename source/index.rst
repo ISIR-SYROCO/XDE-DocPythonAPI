@@ -13,8 +13,11 @@ Contents:
    :glob:
 
    agents/agents
+
    desc/desc
+
    math/lgsm
+
    protobuf/base_pb2
    protobuf/collision_pb2
    protobuf/color_pb2
@@ -36,6 +39,8 @@ Contents:
    protobuf/selection_pb2
    protobuf/tag_pb2
    protobuf/xdeworks_pb2
+
+   colladaparser/colladaparser
 
 Indices and tables
 ==================
