@@ -14,6 +14,8 @@ Contents:
 
    agents/agents
 
+   colladaparser/colladaparser
+
    desc/desc
 
    dsimi/dsimi
@@ -22,16 +24,9 @@ Contents:
 
    math/lgsm
 
-   rtt_interface/rtt_interface
-   rtt_interface_base_type/rtt_interface_base_type
-   rtt_interface_corba/rtt_interface_corba
-   rtt_interface_xde_container_type/rtt_interface_xde_container_type
-   rtt_interface_xde_type/rtt_interface_xde_type
-
-   colladaparser/colladaparser
    ocldeployer/ocldeployer
-   pyorc/pyorc
 
+   physicshelper/physicshelper
    protobuf/base_pb2
    protobuf/collision_pb2
    protobuf/color_pb2
@@ -53,6 +48,14 @@ Contents:
    protobuf/selection_pb2
    protobuf/tag_pb2
    protobuf/xdeworks_pb2
+
+   pyorc/pyorc
+
+   rtt_interface/rtt_interface
+   rtt_interface_base_type/rtt_interface_base_type
+   rtt_interface_corba/rtt_interface_corba
+   rtt_interface_xde_container_type/rtt_interface_xde_container_type
+   rtt_interface_xde_type/rtt_interface_xde_type
 
    xdehuman/xdehuman
 
