@@ -5,3 +5,4 @@ dsimi
 
     rtt/rtt
     rtt/lgsm
+    rtt/rtt_interface
