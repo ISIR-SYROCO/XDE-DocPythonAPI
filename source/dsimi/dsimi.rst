@@ -4,3 +4,4 @@ dsimi
     :glob:
 
     DistantPortConnector
+    gui
