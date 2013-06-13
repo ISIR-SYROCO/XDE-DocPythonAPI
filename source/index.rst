@@ -48,6 +48,7 @@ Contents:
    dsimi/dsimi
 
    rtt_interface/rtt_interface
+   rtt_interface_base_type/rtt_interface_base_type
 
 Indices and tables
 ==================
