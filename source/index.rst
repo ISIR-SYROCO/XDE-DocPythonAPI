@@ -44,6 +44,7 @@ Contents:
    xdehuman/xdehuman
    pyorc/pyorc
    rtt_interface_corba/rtt_interface_corba
+   ocldeployer/ocldeployer
 
 Indices and tables
 ==================
