@@ -47,6 +47,8 @@ Contents:
    ocldeployer/ocldeployer
    dsimi/dsimi
 
+   rtt_interface/rtt_interface
+
 Indices and tables
 ==================
 
