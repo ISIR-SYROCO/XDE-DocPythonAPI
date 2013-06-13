@@ -22,6 +22,9 @@ Contents:
 
    math/lgsm
 
+
+   physicshelper/physicshelper
+
    rtt_interface/rtt_interface
    rtt_interface_base_type/rtt_interface_base_type
    rtt_interface_corba/rtt_interface_corba
