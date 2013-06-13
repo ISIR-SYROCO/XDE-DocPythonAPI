@@ -1,5 +1,5 @@
-dsimi
-=====
+dsimi.rtt
+=========
 .. toctree::
     :glob:
 
