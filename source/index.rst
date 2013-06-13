@@ -42,6 +42,7 @@ Contents:
 
    colladaparser/colladaparser
    xdehuman/xdehuman
+   pyorc/pyorc
 
 Indices and tables
 ==================
