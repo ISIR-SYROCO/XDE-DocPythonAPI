@@ -1,0 +1,566 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>pyorc &mdash; XDE_DocPythonAPI 1.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="XDE_DocPythonAPI 1.0.0 documentation" href="../index.html" />
+    <link rel="next" title="base_pb2" href="../protobuf/base_pb2.html" />
+    <link rel="prev" title="ocldeployer" href="../ocldeployer/ocldeployer.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../protobuf/base_pb2.html" title="base_pb2"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../ocldeployer/ocldeployer.html" title="ocldeployer"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">XDE_DocPythonAPI 1.0.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="pyorc">
+<h1>pyorc<a class="headerlink" href="#pyorc" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
+</div>
+<span class="target" id="module-pyorc"></span><p>Classes to ease the creation of orc tasks.</p>
+<dl class="class">
+<dt id="pyorc.Clock">
+<em class="property">class </em><tt class="descclassname">pyorc.</tt><tt class="descname">Clock</tt><big>(</big><em>name</em>, <em>dt</em><big>)</big><a class="headerlink" href="#pyorc.Clock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../dsimi/rtt/rtt.html#dsimi.rtt.Task" title="dsimi.rtt.Task"><tt class="xref py py-class docutils literal"><span class="pre">dsimi.rtt.Task</span></tt></a></p>
+<dl class="method">
+<dt id="pyorc.Clock.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>name</em>, <em>dt</em><big>)</big><a class="headerlink" href="#pyorc.Clock.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pyorc.Clock.__module__">
+<tt class="descname">__module__</tt><em class="property"> = 'pyorc'</em><a class="headerlink" href="#pyorc.Clock.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyorc.Clock.updateHook">
+<tt class="descname">updateHook</tt><big>(</big><big>)</big><a class="headerlink" href="#pyorc.Clock.updateHook" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pyorc.ContactTaskSet">
+<em class="property">class </em><tt class="descclassname">pyorc.</tt><tt class="descname">ContactTaskSet</tt><big>(</big><em>name</em>, <em>model</em>, <em>controller</em>, <em>contact_sets</em>, <em>bodyname</em>, <em>mu</em>, <em>margin</em>, <em>use_body_task=True</em><big>)</big><a class="headerlink" href="#pyorc.ContactTaskSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <tt class="xref py py-class docutils literal"><span class="pre">object</span></tt></p>
+<dl class="attribute">
+<dt id="pyorc.ContactTaskSet.__dict__">
+<tt class="descname">__dict__</tt><em class="property"> = dict_proxy({'startTasks': &lt;function startTasks at 0x4f57c80&gt;, '__module__': 'pyorc', 'getFrames': &lt;function getFrames at 0x4f4e0c8&gt;, 'stopTasks': &lt;function stopTasks at 0x4f57e60&gt;, '__dict__': &lt;attribute '__dict__' of 'ContactTaskSet' objects&gt;, '__weakref__': &lt;attribute '__weakref__' of 'ContactTaskSet' objects&gt;, 'getTasks': &lt;function getTasks at 0x4f4e140&gt;, 'readContactSetsFromFile': &lt;staticmethod object at 0x3fb7050&gt;, '__init__': &lt;function __init__ at 0x487fb90&gt;, '__doc__': None})</em><a class="headerlink" href="#pyorc.ContactTaskSet.__dict__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyorc.ContactTaskSet.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>name</em>, <em>model</em>, <em>controller</em>, <em>contact_sets</em>, <em>bodyname</em>, <em>mu</em>, <em>margin</em>, <em>use_body_task=True</em><big>)</big><a class="headerlink" href="#pyorc.ContactTaskSet.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pyorc.ContactTaskSet.__module__">
+<tt class="descname">__module__</tt><em class="property"> = 'pyorc'</em><a class="headerlink" href="#pyorc.ContactTaskSet.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pyorc.ContactTaskSet.__weakref__">
+<tt class="descname">__weakref__</tt><a class="headerlink" href="#pyorc.ContactTaskSet.__weakref__" title="Permalink to this definition">¶</a></dt>
+<dd><p>list of weak references to the object (if defined)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyorc.ContactTaskSet.getFrames">
+<tt class="descname">getFrames</tt><big>(</big><big>)</big><a class="headerlink" href="#pyorc.ContactTaskSet.getFrames" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyorc.ContactTaskSet.getTasks">
+<tt class="descname">getTasks</tt><big>(</big><big>)</big><a class="headerlink" href="#pyorc.ContactTaskSet.getTasks" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="staticmethod">
+<dt id="pyorc.ContactTaskSet.readContactSetsFromFile">
+<em class="property">static </em><tt class="descname">readContactSetsFromFile</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pyorc.ContactTaskSet.readContactSetsFromFile" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyorc.ContactTaskSet.startTasks">
+<tt class="descname">startTasks</tt><big>(</big><big>)</big><a class="headerlink" href="#pyorc.ContactTaskSet.startTasks" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyorc.ContactTaskSet.stopTasks">
+<tt class="descname">stopTasks</tt><big>(</big><big>)</big><a class="headerlink" href="#pyorc.ContactTaskSet.stopTasks" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pyorc.Frame">
+<em class="property">class </em><tt class="descclassname">pyorc.</tt><tt class="descname">Frame</tt><big>(</big><em>name</em>, <em>model</em>, <em>frame_name</em>, <em>**args</em><big>)</big><a class="headerlink" href="#pyorc.Frame" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <tt class="xref py py-class docutils literal"><span class="pre">object</span></tt></p>
+<p>Builds and wraps a C++ orc::ControlFrame.</p>
+<dl class="attribute">
+<dt id="pyorc.Frame.__dict__">
+<tt class="descname">__dict__</tt><em class="property"> = dict_proxy({'__module__': 'pyorc', 'getState': &lt;function getState at 0x5150578&gt;, 'getVelocity': &lt;function getVelocity at 0x5150410&gt;, 'getFrame': &lt;function getFrame at 0x500dde8&gt;, 'getTaskSpace': &lt;function getTaskSpace at 0x4d7bd70&gt;, 'getPosition': &lt;function getPosition at 0x56c8410&gt;, '__dict__': &lt;attribute '__dict__' of 'Frame' objects&gt;, '__weakref__': &lt;attribute '__weakref__' of 'Frame' objects&gt;, '__doc__': '\n  Builds and wraps a C++ orc::ControlFrame.\n  ', '__init__': &lt;function __init__ at 0x56c8b90&gt;})</em><a class="headerlink" href="#pyorc.Frame.__dict__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyorc.Frame.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>name</em>, <em>model</em>, <em>frame_name</em>, <em>**args</em><big>)</big><a class="headerlink" href="#pyorc.Frame.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pyorc.Frame.__module__">
+<tt class="descname">__module__</tt><em class="property"> = 'pyorc'</em><a class="headerlink" href="#pyorc.Frame.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pyorc.Frame.__weakref__">
+<tt class="descname">__weakref__</tt><a class="headerlink" href="#pyorc.Frame.__weakref__" title="Permalink to this definition">¶</a></dt>
+<dd><p>list of weak references to the object (if defined)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyorc.Frame.getFrame">
+<tt class="descname">getFrame</tt><big>(</big><big>)</big><a class="headerlink" href="#pyorc.Frame.getFrame" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyorc.Frame.getPosition">
+<tt class="descname">getPosition</tt><big>(</big><big>)</big><a class="headerlink" href="#pyorc.Frame.getPosition" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyorc.Frame.getState">
+<tt class="descname">getState</tt><big>(</big><big>)</big><a class="headerlink" href="#pyorc.Frame.getState" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyorc.Frame.getTaskSpace">
+<tt class="descname">getTaskSpace</tt><big>(</big><big>)</big><a class="headerlink" href="#pyorc.Frame.getTaskSpace" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyorc.Frame.getVelocity">
+<tt class="descname">getVelocity</tt><big>(</big><big>)</big><a class="headerlink" href="#pyorc.Frame.getVelocity" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pyorc.JointLimits">
+<em class="property">class </em><tt class="descclassname">pyorc.</tt><tt class="descname">JointLimits</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pyorc.JointLimits" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <tt class="xref py py-class docutils literal"><span class="pre">object</span></tt></p>
+<dl class="attribute">
+<dt id="pyorc.JointLimits.__dict__">
+<tt class="descname">__dict__</tt><em class="property"> = dict_proxy({'__module__': 'pyorc', '__doc__': None, 'maxVelocities': &lt;property object at 0x489b418&gt;, '__dict__': &lt;attribute '__dict__' of 'JointLimits' objects&gt;, '__weakref__': &lt;attribute '__weakref__' of 'JointLimits' objects&gt;, 'maxTorques': &lt;property object at 0x58e0b50&gt;, '__init__': &lt;function __init__ at 0x58f7de8&gt;})</em><a class="headerlink" href="#pyorc.JointLimits.__dict__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyorc.JointLimits.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pyorc.JointLimits.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pyorc.JointLimits.__module__">
+<tt class="descname">__module__</tt><em class="property"> = 'pyorc'</em><a class="headerlink" href="#pyorc.JointLimits.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pyorc.JointLimits.__weakref__">
+<tt class="descname">__weakref__</tt><a class="headerlink" href="#pyorc.JointLimits.__weakref__" title="Permalink to this definition">¶</a></dt>
+<dd><p>list of weak references to the object (if defined)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyorc.JointLimits.maxTorques">
+<tt class="descname">maxTorques</tt><a class="headerlink" href="#pyorc.JointLimits.maxTorques" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pyorc.JointLimits.maxVelocities">
+<tt class="descname">maxVelocities</tt><a class="headerlink" href="#pyorc.JointLimits.maxVelocities" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pyorc.JointMapping">
+<em class="property">class </em><tt class="descclassname">pyorc.</tt><tt class="descname">JointMapping</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pyorc.JointMapping" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <tt class="xref py py-class docutils literal"><span class="pre">object</span></tt></p>
+<dl class="attribute">
+<dt id="pyorc.JointMapping.__dict__">
+<tt class="descname">__dict__</tt><em class="property"> = dict_proxy({'__module__': 'pyorc', '__len__': &lt;function __len__ at 0x58f78c0&gt;, '__dict__': &lt;attribute '__dict__' of 'JointMapping' objects&gt;, '__weakref__': &lt;attribute '__weakref__' of 'JointMapping' objects&gt;, '__doc__': None, '__init__': &lt;function __init__ at 0x58f7938&gt;})</em><a class="headerlink" href="#pyorc.JointMapping.__dict__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyorc.JointMapping.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pyorc.JointMapping.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyorc.JointMapping.__len__">
+<tt class="descname">__len__</tt><big>(</big><big>)</big><a class="headerlink" href="#pyorc.JointMapping.__len__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pyorc.JointMapping.__module__">
+<tt class="descname">__module__</tt><em class="property"> = 'pyorc'</em><a class="headerlink" href="#pyorc.JointMapping.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pyorc.JointMapping.__weakref__">
+<tt class="descname">__weakref__</tt><a class="headerlink" href="#pyorc.JointMapping.__weakref__" title="Permalink to this definition">¶</a></dt>
+<dd><p>list of weak references to the object (if defined)</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pyorc.Task">
+<em class="property">class </em><tt class="descclassname">pyorc.</tt><tt class="descname">Task</tt><big>(</big><em>name</em>, <em>model</em>, <em>controller</em>, <em>frame_name</em>, <em>kind</em>, <em>**args</em><big>)</big><a class="headerlink" href="#pyorc.Task" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <tt class="xref py py-class docutils literal"><span class="pre">object</span></tt></p>
+<p>Builds and wraps a C++ orc::Task.</p>
+<p>Creates a task. frame_name is either &#8216;CoM&#8217; or the name of a segment of the
+controlled manikin (e.g. &#8216;Right Center of Prehension&#8217;). A local frame can be
+specified using the optional argument Hloc.
+The kind of task can be specified using the argument kind. Possible values are
+&#8216;position&#8217;, &#8216;orientation&#8217;, &#8216;displacement&#8217;. For position and displacement tasks,
+axes can be specified using the optional argument axes.
+The optional arguments can also be used to specified a bandwidth, the gains, and
+the weight of the task (for controllers that handle priorities).
+Note that if you specify both a bandwith and a stiffness or damping, the stiffness
+and damping that you specify will overwrite the value computed using the specified
+bandwidth.</p>
+<dl class="method">
+<dt id="pyorc.Task._Task__computeJointSpaceGains">
+<tt class="descname">_Task__computeJointSpaceGains</tt><big>(</big><em>freq</em>, <em>args</em><big>)</big><a class="headerlink" href="#pyorc.Task._Task__computeJointSpaceGains" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyorc.Task._Task__parseAxes">
+<tt class="descname">_Task__parseAxes</tt><big>(</big><em>args</em><big>)</big><a class="headerlink" href="#pyorc.Task._Task__parseAxes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyorc.Task._Task__parseGain">
+<tt class="descname">_Task__parseGain</tt><big>(</big><em>args</em>, <em>kname</em>, <em>setter</em><big>)</big><a class="headerlink" href="#pyorc.Task._Task__parseGain" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyorc.Task._Task__parseWeight">
+<tt class="descname">_Task__parseWeight</tt><big>(</big><em>args</em>, <em>wname</em>, <em>setter</em><big>)</big><a class="headerlink" href="#pyorc.Task._Task__parseWeight" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pyorc.Task.__dict__">
+<tt class="descname">__dict__</tt><em class="property"> = dict_proxy({'_Task__parseAxes': &lt;function __parseAxes at 0x4e64398&gt;, '__module__': 'pyorc', '_Task__computeJointSpaceGains': &lt;function __computeJointSpaceGains at 0x4e61758&gt;, 'configure': &lt;function configure at 0x4aba2a8&gt;, 'getActualFrame': &lt;function getActualFrame at 0x4128320&gt;, '_Task__parseWeight': &lt;function __parseWeight at 0x4e610c8&gt;, 'setTargetLookAt': &lt;function setTargetLookAt at 0x4b25230&gt;, '_Task__parseGain': &lt;function __parseGain at 0x4e64a28&gt;, 'getReferenceVelocity': &lt;function getReferenceVelocity at 0x41285f0&gt;, 'stopTask': &lt;function stopTask at 0x4142d70&gt;, '__dict__': &lt;attribute '__dict__' of 'Task' objects&gt;, 'getReferenceAcceleration': &lt;function getReferenceAcceleration at 0x41287d0&gt;, '__weakref__': &lt;attribute '__weakref__' of 'Task' objects&gt;, '__init__': &lt;function __init__ at 0x4aba7d0&gt;, 'setReferenceAcceleration': &lt;function setReferenceAcceleration at 0x4128398&gt;, 'getActualVelocity': &lt;function getActualVelocity at 0x4b645f0&gt;, 'getReferenceEffort': &lt;function getReferenceEffort at 0x4128aa0&gt;, 'computeJointSpaceGains': &lt;function computeJointSpaceGains at 0x4b258c0&gt;, 'getActualPosition': &lt;function getActualPosition at 0x4220ed8&gt;, 'setReferenceVelocity': &lt;function setReferenceVelocity at 0x4128938&gt;, 'getActualState': &lt;function getActualState at 0x47c47d0&gt;, 'setReferenceEffort': &lt;function setReferenceEffort at 0x4220938&gt;, 'setReferencePosition': &lt;function setReferencePosition at 0x4128668&gt;, 'getTask': &lt;function getTask at 0x4142140&gt;, 'getReferencePosition': &lt;function getReferencePosition at 0x44859b0&gt;, 'getReferenceFrame': &lt;function getReferenceFrame at 0x4128b18&gt;, 'setTargetAltitude': &lt;function setTargetAltitude at 0x38ac500&gt;, '__doc__': '\n  Builds and wraps a C++ orc::Task.\n  ', 'startTask': &lt;function startTask at 0x4aba488&gt;})</em><a class="headerlink" href="#pyorc.Task.__dict__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyorc.Task.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>name</em>, <em>model</em>, <em>controller</em>, <em>frame_name</em>, <em>kind</em>, <em>**args</em><big>)</big><a class="headerlink" href="#pyorc.Task.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a task. frame_name is either &#8216;CoM&#8217; or the name of a segment of the
+controlled manikin (e.g. &#8216;Right Center of Prehension&#8217;). A local frame can be
+specified using the optional argument Hloc.
+The kind of task can be specified using the argument kind. Possible values are
+&#8216;position&#8217;, &#8216;orientation&#8217;, &#8216;displacement&#8217;. For position and displacement tasks,
+axes can be specified using the optional argument axes.
+The optional arguments can also be used to specified a bandwidth, the gains, and
+the weight of the task (for controllers that handle priorities).
+Note that if you specify both a bandwith and a stiffness or damping, the stiffness
+and damping that you specify will overwrite the value computed using the specified
+bandwidth.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyorc.Task.__module__">
+<tt class="descname">__module__</tt><em class="property"> = 'pyorc'</em><a class="headerlink" href="#pyorc.Task.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pyorc.Task.__weakref__">
+<tt class="descname">__weakref__</tt><a class="headerlink" href="#pyorc.Task.__weakref__" title="Permalink to this definition">¶</a></dt>
+<dd><p>list of weak references to the object (if defined)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyorc.Task.computeJointSpaceGains">
+<tt class="descname">computeJointSpaceGains</tt><big>(</big><em>freq</em><big>)</big><a class="headerlink" href="#pyorc.Task.computeJointSpaceGains" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyorc.Task.configure">
+<tt class="descname">configure</tt><big>(</big><em>**args</em><big>)</big><a class="headerlink" href="#pyorc.Task.configure" title="Permalink to this definition">¶</a></dt>
+<dd><p>Configures a task: sets its desired mass, stiffness, damping or bandwidth, and the
+weight (for controllers that handle priorities). Specifying stiffness or damping
+will overwrite the value computed from the specified bandwidth(if any).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyorc.Task.getActualFrame">
+<tt class="descname">getActualFrame</tt><big>(</big><big>)</big><a class="headerlink" href="#pyorc.Task.getActualFrame" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyorc.Task.getActualPosition">
+<tt class="descname">getActualPosition</tt><big>(</big><big>)</big><a class="headerlink" href="#pyorc.Task.getActualPosition" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyorc.Task.getActualState">
+<tt class="descname">getActualState</tt><big>(</big><big>)</big><a class="headerlink" href="#pyorc.Task.getActualState" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyorc.Task.getActualVelocity">
+<tt class="descname">getActualVelocity</tt><big>(</big><big>)</big><a class="headerlink" href="#pyorc.Task.getActualVelocity" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyorc.Task.getReferenceAcceleration">
+<tt class="descname">getReferenceAcceleration</tt><big>(</big><big>)</big><a class="headerlink" href="#pyorc.Task.getReferenceAcceleration" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyorc.Task.getReferenceEffort">
+<tt class="descname">getReferenceEffort</tt><big>(</big><big>)</big><a class="headerlink" href="#pyorc.Task.getReferenceEffort" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyorc.Task.getReferenceFrame">
+<tt class="descname">getReferenceFrame</tt><big>(</big><big>)</big><a class="headerlink" href="#pyorc.Task.getReferenceFrame" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyorc.Task.getReferencePosition">
+<tt class="descname">getReferencePosition</tt><big>(</big><big>)</big><a class="headerlink" href="#pyorc.Task.getReferencePosition" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyorc.Task.getReferenceVelocity">
+<tt class="descname">getReferenceVelocity</tt><big>(</big><big>)</big><a class="headerlink" href="#pyorc.Task.getReferenceVelocity" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyorc.Task.getTask">
+<tt class="descname">getTask</tt><big>(</big><big>)</big><a class="headerlink" href="#pyorc.Task.getTask" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyorc.Task.setReferenceAcceleration">
+<tt class="descname">setReferenceAcceleration</tt><big>(</big><em>gamma</em><big>)</big><a class="headerlink" href="#pyorc.Task.setReferenceAcceleration" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyorc.Task.setReferenceEffort">
+<tt class="descname">setReferenceEffort</tt><big>(</big><em>W</em><big>)</big><a class="headerlink" href="#pyorc.Task.setReferenceEffort" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyorc.Task.setReferencePosition">
+<tt class="descname">setReferencePosition</tt><big>(</big><em>H</em><big>)</big><a class="headerlink" href="#pyorc.Task.setReferencePosition" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyorc.Task.setReferenceVelocity">
+<tt class="descname">setReferenceVelocity</tt><big>(</big><em>T</em><big>)</big><a class="headerlink" href="#pyorc.Task.setReferenceVelocity" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyorc.Task.setTargetAltitude">
+<tt class="descname">setTargetAltitude</tt><big>(</big><em>z</em>, <em>**args</em><big>)</big><a class="headerlink" href="#pyorc.Task.setTargetAltitude" title="Permalink to this definition">¶</a></dt>
+<dd><p>Modify the target of a task to specify a desired altitude.
+The target is either specified in arguments using fromTarget=,
+or taken from the current state of the manikin; then the altitude of
+the target is overwritten with the value z specified in argument.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyorc.Task.setTargetLookAt">
+<tt class="descname">setTargetLookAt</tt><big>(</big><em>v_local</em>, <em>vref_abs</em>, <em>**args</em><big>)</big><a class="headerlink" href="#pyorc.Task.setTargetLookAt" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function can be used if you want to implement a &#8216;look at&#8217; behavior using an
+orientation task. v_local is a vector specified in the local frame (the control frame
+associated with the task), vref_abs is the desired coordinates of this vector in world
+coordinates. The target is computed either from the current state or from a specified
+displacement using fromTarget=.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyorc.Task.startTask">
+<tt class="descname">startTask</tt><big>(</big><em>**args</em><big>)</big><a class="headerlink" href="#pyorc.Task.startTask" title="Permalink to this definition">¶</a></dt>
+<dd><p>Starts a task. It is possible to force the desired state to match the
+current state by setting resetDesiredState=True in the arguments list.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyorc.Task.stopTask">
+<tt class="descname">stopTask</tt><big>(</big><big>)</big><a class="headerlink" href="#pyorc.Task.stopTask" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pyorc.VHController">
+<em class="property">class </em><tt class="descclassname">pyorc.</tt><tt class="descname">VHController</tt><big>(</big><em>name</em><big>)</big><a class="headerlink" href="#pyorc.VHController" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../dsimi/rtt/rtt.html#dsimi.rtt.Task" title="dsimi.rtt.Task"><tt class="xref py py-class docutils literal"><span class="pre">dsimi.rtt.Task</span></tt></a></p>
+<dl class="method">
+<dt id="pyorc.VHController.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>name</em><big>)</big><a class="headerlink" href="#pyorc.VHController.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pyorc.VHController.__module__">
+<tt class="descname">__module__</tt><em class="property"> = 'pyorc'</em><a class="headerlink" href="#pyorc.VHController.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyorc.VHController.doStart">
+<tt class="descname">doStart</tt><big>(</big><big>)</big><a class="headerlink" href="#pyorc.VHController.doStart" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyorc.VHController.doStop">
+<tt class="descname">doStop</tt><big>(</big><big>)</big><a class="headerlink" href="#pyorc.VHController.doStop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyorc.VHController.doUpdate">
+<tt class="descname">doUpdate</tt><big>(</big><big>)</big><a class="headerlink" href="#pyorc.VHController.doUpdate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyorc.VHController.isActive">
+<tt class="descname">isActive</tt><big>(</big><big>)</big><a class="headerlink" href="#pyorc.VHController.isActive" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pyorc.VHController.rtt_isActive">
+<tt class="descname">rtt_isActive</tt><em class="property"> = &lt;dsimi.rtt.passcall instance at 0x5630c68&gt;</em><a class="headerlink" href="#pyorc.VHController.rtt_isActive" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pyorc.VHController.rtt_start">
+<tt class="descname">rtt_start</tt><em class="property"> = &lt;dsimi.rtt.passcall instance at 0x5630998&gt;</em><a class="headerlink" href="#pyorc.VHController.rtt_start" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pyorc.VHController.rtt_stop">
+<tt class="descname">rtt_stop</tt><em class="property"> = &lt;dsimi.rtt.passcall instance at 0x5630d40&gt;</em><a class="headerlink" href="#pyorc.VHController.rtt_stop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyorc.VHController.start">
+<tt class="descname">start</tt><big>(</big><big>)</big><a class="headerlink" href="#pyorc.VHController.start" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyorc.VHController.stop">
+<tt class="descname">stop</tt><big>(</big><big>)</big><a class="headerlink" href="#pyorc.VHController.stop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyorc.VHController.updateHook">
+<tt class="descname">updateHook</tt><big>(</big><big>)</big><a class="headerlink" href="#pyorc.VHController.updateHook" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="../ocldeployer/ocldeployer.html"
+                        title="previous chapter">ocldeployer</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../protobuf/base_pb2.html"
+                        title="next chapter">base_pb2</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/pyorc/pyorc.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../protobuf/base_pb2.html" title="base_pb2"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../ocldeployer/ocldeployer.html" title="ocldeployer"
+             >previous</a> |</li>
+        <li><a href="../index.html">XDE_DocPythonAPI 1.0.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, XDE-ISIR.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b1.
+    </div>
+  </body>
+</html>
