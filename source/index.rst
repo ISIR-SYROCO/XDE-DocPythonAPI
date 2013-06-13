@@ -52,6 +52,8 @@ Contents:
    rtt_interface_xde_container_type/rtt_interface_xde_container_type
    rtt_interface_xde_type/rtt_interface_xde_type
 
+   deploy/deploy
+
 Indices and tables
 ==================
 
