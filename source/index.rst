@@ -16,7 +16,21 @@ Contents:
 
    desc/desc
 
+   dsimi/dsimi
+
+   deploy/deploy
+
    math/lgsm
+
+   rtt_interface/rtt_interface
+   rtt_interface_base_type/rtt_interface_base_type
+   rtt_interface_corba/rtt_interface_corba
+   rtt_interface_xde_container_type/rtt_interface_xde_container_type
+   rtt_interface_xde_type/rtt_interface_xde_type
+
+   colladaparser/colladaparser
+   ocldeployer/ocldeployer
+   pyorc/pyorc
 
    protobuf/base_pb2
    protobuf/collision_pb2
@@ -40,19 +54,7 @@ Contents:
    protobuf/tag_pb2
    protobuf/xdeworks_pb2
 
-   colladaparser/colladaparser
    xdehuman/xdehuman
-   pyorc/pyorc
-   rtt_interface_corba/rtt_interface_corba
-   ocldeployer/ocldeployer
-   dsimi/dsimi
-
-   rtt_interface/rtt_interface
-   rtt_interface_base_type/rtt_interface_base_type
-   rtt_interface_xde_container_type/rtt_interface_xde_container_type
-   rtt_interface_xde_type/rtt_interface_xde_type
-
-   deploy/deploy
 
 Indices and tables
 ==================
