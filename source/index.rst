@@ -43,6 +43,7 @@ Contents:
    colladaparser/colladaparser
    xdehuman/xdehuman
    pyorc/pyorc
+   rtt_interface_corba/rtt_interface_corba
 
 Indices and tables
 ==================
