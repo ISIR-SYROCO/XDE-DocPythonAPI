@@ -49,6 +49,7 @@ Contents:
 
    rtt_interface/rtt_interface
    rtt_interface_base_type/rtt_interface_base_type
+   rtt_interface_xde_container_type/rtt_interface_xde_container_type
 
 Indices and tables
 ==================
