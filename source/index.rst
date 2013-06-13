@@ -45,6 +45,7 @@ Contents:
    pyorc/pyorc
    rtt_interface_corba/rtt_interface_corba
    ocldeployer/ocldeployer
+   dsimi/dsimi
 
 Indices and tables
 ==================
